@@ -1,7 +1,6 @@
 from collections import defaultdict
 
 with open('RS.txt', 'r') as input_file:
-    counter = 0
     protein_interactions = defaultdict(list)
     for line in input_file:
         line = line.strip().split()
