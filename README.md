@@ -1,5 +1,5 @@
 # BIMM185
-My repository for code for BIMM 185
+Code and Outputs
 ### Week 1
 ##### script1.py
     Reformat header, followed by sequence: script1.out
