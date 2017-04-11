@@ -8,7 +8,7 @@ filename = sys.argv[1]
 with open(filename, 'r') as inputfile:
 
     # output file
-    with open("out.txt", 'w') as out:
+    with open("script1.out", 'w') as out:
         
         for i, line in enumerate(inputfile):
 
