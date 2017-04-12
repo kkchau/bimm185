@@ -15,7 +15,7 @@ with open('ProteinTable167_161521.txt', 'r') as proteins:
     next(proteins)
     for line in proteins:
         line = line.strip().split()
-        replicon = line[1]
+        replicon = line[8]
         strand = line[4]
         locus = line[6]
         geneid = line[7]
