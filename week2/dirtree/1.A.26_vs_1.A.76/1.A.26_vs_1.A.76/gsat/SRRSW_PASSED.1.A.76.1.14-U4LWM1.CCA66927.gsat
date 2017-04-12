@@ -1,0 +1,54 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 316
+# Identity:     105/316 (33.2%)
+# Similarity:   170/316 (53.8%)
+# Gaps:          12/316 ( 3.8%)
+# Score: 476.0
+# 
+#
+#=======================================
+
+A_Sequence         1 CSASATVDDKTLKFSQLLTSNA--KSGVIQLNNELYNAITTAPRNYTAVV     48
+                     ||        | :  |||   |   :|:: |:  |:  |    | ::  |
+B_Sequence         1 CSILHAFAASTEQTHQLLVDLAAKNAGIVPLDAGLFEKIVAKDREWSVSV     50
+
+A_Sequence        49 LLTALAPQFGCQLCKDFQPEYDLLAKSWQ---GQHKNGDGLFFSSLDFQN     95
+                       |||:|   |  |:|| |::  :||:|     : :|    ||::|:| :
+B_Sequence        51 QFTALSPTMKCAPCRDFAPQFATVAKAWSTVPTEQRNQH--FFATLEFTD     98
+
+A_Sequence        96 GRETFMKLGLNTAPILYLFPPTVGPDADPLHHTTPKQFDFQSNRIPAEAV    145
+                       ||| :| | :||::  :|   ||         |: :|| |    || :
+B_Sequence        99 AVETFRRLQLVSAPVMQYYPAARGPRRPANGKLDPQPWDFNSLGFDAETM    148
+
+A_Sequence       146 AHWISNNGPHKPEIVRPFNYEKLFMTLGAIFAGALILLLSFKTLKPALYS    195
+                     |  :|   | |     | |:  :  ::  :||     ||: : : | | |
+B_Sequence       149 ATELSKYTPTKIPYKAPVNWALITTSVSGVFA----FLLALRFILPILTS    194
+
+A_Sequence       196 RNLWSAISLILILLFTSGHMFNHIRSVPYVANNGRGGVSYVAGGFSNQFG    245
+                     | :|: :  |  ::|||| ||  ||  | :  :|| | |::|||: | :|
+B_Sequence       195 RWIWALLITIACVVFTSGIMFVRIRGSP-MTGSGRSGPSWIAGGYQNMYG    243
+
+A_Sequence       246 LETQIVAVVYAVLAFCAIALSMKMPRVADPTRQKIAILLWNAILLCGFSF    295
+                     :| |::| :|  | |   ||   :||:  | :|::|: :|  ::   || 
+B_Sequence       244 MEVQVLAGIYGTLGFSYCALIFLVPRILSPYKQRLAVYIWCTVIFLLFSV    293
+
+A_Sequence       296 LMTLFRMKNGGYPFKL    311
+                     |::|| :||  |||:|
+B_Sequence       294 LLSLFGLKNQAYPFRL    309
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	13.32 +/- 6.52
+Standard score (Z):	71.0
+Precise score (Z):	70.931
+Shuffles:	1000

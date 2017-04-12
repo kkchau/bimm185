@@ -1,0 +1,42 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 171
+# Identity:      42/171 (24.6%)
+# Similarity:    72/171 (42.1%)
+# Gaps:          17/171 ( 9.9%)
+# Score: 100.0
+# 
+#
+#=======================================
+
+A_Sequence         1 IACWVVVF---SPQII--ENFRRG-SADGLSLLFLIVWLAGDVFNILGAV     44
+                     :| |:: |    | |:  ::::   :       |:  |    :  :|  :
+B_Sequence         1 VAVWILAFLVNGPMILASDSWKNSTNTKDCEPGFVTEWYILTITMLLEFL     50
+
+A_Sequence        45 LQGVLPTMIILAVYYTLADIVLLGQCFYYRGFNIRDELSSSSSSDSHSVV     94
+                     |  :      : :|::|     | :|  : ||:     |||:|   |   
+B_Sequence        51 LPVISVAYFNVQIYWSLWKRRALSRCPSHAGFS---TTSSSASGHLHRAG     97
+
+A_Sequence        95 EGSRDGN----EESGSEANASPTERSSLLPKSNGHAHGEETAGEAGP--T    138
+                        |  |    | : |  : ||  :||:|     | :   || : |    
+B_Sequence        98 VACRTSNPGLKESAASRHSESPRRKSSILVSLRTHMNSSITAFKVGSFWR    147
+
+A_Sequence       139 GASTAQRQRSSASL--GKDIA    157
+                       | | |||  | |  |: :|
+B_Sequence       148 SESAALRQREYAELLRGRKLA    168
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	11.53 +/- 5.57
+Standard score (Z):	16.0
+Precise score (Z):	15.887
+Shuffles:	1000

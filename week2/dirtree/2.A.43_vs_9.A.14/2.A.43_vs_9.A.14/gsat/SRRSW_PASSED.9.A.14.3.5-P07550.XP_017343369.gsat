@@ -1,0 +1,58 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 357
+# Identity:     104/357 (29.1%)
+# Similarity:   171/357 (47.9%)
+# Gaps:          53/357 (14.8%)
+# Score: 378.0
+# 
+#
+#=======================================
+
+A_Sequence         1 MGIVMSLIVLAIVFGNVLVITAIAKFERLQTVTNYFITSLACADLVMGLA     50
+                     : ::||||:|    ||:|:|  :     |:  :| |: ||  :||:: | 
+B_Sequence         1 LAVIMSLIILVTACGNILLIGLVFAHRSLRCTSNCFLVSLFLSDLMVALV     50
+
+A_Sequence        51 VVPFGAAHILMKMWTFGNFWCEFWTSIDVLCVTASIETLCVIAVDRYFAI    100
+                     |:|    ::|   |     :|  |   ||:| :|||  ||||::|||  |
+B_Sequence        51 VMPPAMLNVLCGTWVLSPGFCPVWLCFDVMCCSASILNLCVISLDRYLFI    100
+
+A_Sequence       101 TSPFKYQSLLTKNKARVIILMVWIVSGLTSFLPIQMHWYRATHQE-----    145
+                      || :|:  :|  :| :::   | :: |||||||:| |:     :     
+B_Sequence       101 ISPLRYKQRMTPPRALLLVGGAWGLAALTSFLPIEMDWHSLGRMQDHSGN    150
+
+A_Sequence       146 -AIN-------CY--------ANE-TC---CDFFTNQAYAIASSIVSFYV    175
+                       ||        |        :|  |    |       :|: :: ::|::
+B_Sequence       151 GMINTTVPWLSSYYPPSYFQLSNSGTLSLQCHLRVTLPFALVATFLTFFL    200
+
+A_Sequence       176 PLVIMVFVYSRVFQEAKRQLQKID---------KSEGR-FHVQNLSQVEQ    215
+                     |   : | | |:   |:|| ::::          | |      :|    |
+B_Sequence       201 PSTAICFTYCRILLAARRQARQVEALTYPPYPQHSPGEPSRPPSLGHAAQ    250
+
+A_Sequence       216 D-GRTGH---GLRRSSKFCLKE-----H----KALK---TLGIIMGTFTL    249
+                     :     |    : | :   :       |    ||||   |||:::| |  
+B_Sequence       251 EVDDYSHQDPPVMRQAPLSVNSERRLAHRQGKKALKASLTLGVLLGLFFS    300
+
+A_Sequence       250 CWLPFFIVNIVHVIQDNLIRKEVYILLNWIGYVNSGFNPLIY-CRSPDFR    298
+                      |||||| |:   : :  :   ::  : |:|| ||  ||:||     ||:
+B_Sequence       301 AWLPFFITNMAQAVCE-CVPPSLFDAITWLGYCNSTMNPIIYPLFMRDFK    349
+
+A_Sequence       299 IAFQELL    305
+                      |   ||
+B_Sequence       350 RALGRLL    356
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	14.27 +/- 6.51
+Standard score (Z):	56.0
+Precise score (Z):	55.871
+Shuffles:	1000

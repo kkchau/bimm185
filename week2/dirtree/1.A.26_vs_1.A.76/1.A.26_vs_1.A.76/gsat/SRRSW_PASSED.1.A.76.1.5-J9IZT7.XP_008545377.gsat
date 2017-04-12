@@ -1,0 +1,54 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 324
+# Identity:      78/324 (24.1%)
+# Similarity:   138/324 (42.6%)
+# Gaps:          39/324 (12.0%)
+# Score: 165.0
+# 
+#
+#=======================================
+
+A_Sequence         1 NASDPGQQKLK-KIEAL-EYATSNGIIVFNHKNYEELVLQNPRPYDVVVV     48
+                     |   |||  |  ::: | | |    :  ||   ::| |   || | ::|:
+B_Sequence         1 NRIKPGQTSLSDRVQQLTEMAMKKPVFKFNGAKFKEYVKTPPRNYSIIVM     50
+
+A_Sequence        49 YTVSS---HCDLCDEVMSEFETVVYSYQKNKHLSSRPVFFGALYHSKETQ     95
+                     :|  :    | :|     || ||  |:: ::  |:: :|| |     |  
+B_Sequence        51 FTAMAPQRKCQICQHAHEEFITVANSFRYSQFYSNK-LFF-ATVDFDEGS     98
+
+A_Sequence        96 QYFMKHNFKTVPHLTVSLQKLKRMEGEEFYKEEDKWLVRADEI-YDSNKI    144
+                       |      | | : :        :|:   |  |   ::   | : :  |
+B_Sequence        99 DVFQMMRLNTAP-VFIHFP----AKGKP--KSADTMDIQ--RIGFSAEAI    139
+
+A_Sequence       145 LEFFNKRLSTDVPLTFPFTTIILKNIVFLLIFAALITIVKYLR----VVM    190
+                      :: ::|  ||: :   |        | :::   ||    |||      :
+B_Sequence       140 AKWISER--TDIQIRV-FRPPNYSGTVAVIMLLILIGGFLYLRRNNLDFI    186
+
+A_Sequence       191 MQPAVWFFIAMMTYFICTGGIVYSIIHNVPWFKMERDQYGSVYISEYFMK    240
+                         :|   ||        | ::: |   |:  : :   |::    |   
+B_Sequence       187 YNKTIWSLGAMFFTLTMISGQMWNHIRGPPF--IHKAANGNIV---YIHG    231
+
+A_Sequence       241 GQRGQWAGEGYIFSFL--VCCCGLILI--FLSKVEDILKKSSHRRMAVLG    286
+                       :||:  | ||   |      |::|:     :  || |:   |  ||:|
+B_Sequence       232 SSQGQFVLESYIVMILNGAVILGMLLMTEAACRKGDIKKR---RIFAVIG    278
+
+A_Sequence       287 -SLVAIYFLSELMLICYKYKSPWY    309
+                       |||::|   |:|  :: |:  |
+B_Sequence       279 LGLVAVFF--SLLLSIFRNKAQAY    300
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	12.00 +/- 6.49
+Standard score (Z):	24.0
+Precise score (Z):	23.586
+Shuffles:	1000

@@ -1,0 +1,54 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 350
+# Identity:     347/350 (99.1%)
+# Similarity:   347/350 (99.1%)
+# Gaps:           0/350 ( 0.0%)
+# Score: 1773.0
+# 
+#
+#=======================================
+
+A_Sequence         1 MIKYHVMKEGYILTVFKNERLSWLPYIAIVILLHVIGFSFLWIAGKDHHI     50
+                     |||||||||||||||||||||||||||||||||||||| |||||||||||
+B_Sequence         1 MIKYHVMKEGYILTVFKNERLSWLPYIAIVILLHVIGFGFLWIAGKDHHI     50
+
+A_Sequence        51 LFGMGILAYTLGLRHAFDADHIAAIDNTVRKLLQQRKDPSGVGFYFSIGH    100
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+B_Sequence        51 LFGMGILAYTLGLRHAFDADHIAAIDNTVRKLLQQRKDPSGVGFYFSIGH    100
+
+A_Sequence       101 SSVVFLMAVFLGVSVKWAKDELPHFQDIGGTIGTLVSGFFLVLIGVLNLI    150
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+B_Sequence       101 SSVVFLMAVFLGVSVKWAKDELPHFQDIGGTIGTLVSGFFLVLIGVLNLI    150
+
+A_Sequence       151 ILISLINLFAKLRREHIEEAEVDALLESRGFVSRFVGPYFKLITRSWHVL    200
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+B_Sequence       151 ILISLINLFAKLRREHIEEAEVDALLESRGFVSRFVGPYFKLITRSWHVL    200
+
+A_Sequence       201 PLGFLFGLGFDTASEITLLALSSGASQQAISFIGILSLPILFASGMSLLD    250
+                     |||||||||||||||| |||||||||||||||||||||||||||||||||
+B_Sequence       201 PLGFLFGLGFDTASEIALLALSSGASQQAISFIGILSLPILFASGMSLLD    250
+
+A_Sequence       251 TLDGVVMKYAYNWAFFNPIRKIYYNITITTISVIAALVIGMIELLQILAD    300
+                     ||||||||||||||||||||||||||||| ||||||||||||||||||||
+B_Sequence       251 TLDGVVMKYAYNWAFFNPIRKIYYNITITAISVIAALVIGMIELLQILAD    300
+
+A_Sequence       301 KLDLHGAFWAFISSIEFDYLGYILVALFLITWLISSLIWKFGRIEHKWSK    350
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+B_Sequence       301 KLDLHGAFWAFISSIEFDYLGYILVALFLITWLISSLIWKFGRIEHKWSK    350
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	35.46 +/- 10.61
+Standard score (Z):	164.0
+Precise score (Z):	163.701
+Shuffles:	1000

@@ -1,0 +1,58 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 352
+# Identity:     104/352 (29.5%)
+# Similarity:   158/352 (44.9%)
+# Gaps:          19/352 ( 5.4%)
+# Score: 304.0
+# 
+#
+#=======================================
+
+A_Sequence         1 KDEFSFGFGIISLVCWGVAEIPQIITNFKTKSAHGVSLLFLLTWVAGDVF     50
+                     :: ||  || ||| ||    :||:| |::  ||  :||||:  |  ||: 
+B_Sequence         1 REAFSGIFGSISLACWIFLLVPQLIENYRNGSAEAISLLFIFVWFLGDIA     50
+
+A_Sequence        51 NLVGCLLEPATLPTQFYTALLYTISTVVLVLQSVYYDYINRWWKCRR-IK     99
+                     || | |     :|      : : |:  ||: | :||   |:  : |  : 
+B_Sequence        51 NLAGALW-AGLVPVVVAIGVYFCIADGVLIGQCLYYGIRNKRREARALLS     99
+
+A_Sequence       100 TNDVVEDEK--EPLKP-GKH-EPG-IPIPKSSSKP--HPRREFYYTSARS    142
+                     |              | |   | |  |   :  :   |   |      |:
+B_Sequence       100 TRASASSSSGAAAAAPTGADGETGAAPSGAADGEQSRHGSSEEEPLLKRT    149
+
+A_Sequence       143 LAGSGTPPFRTYLRVAKSGPSALGLDGDSSSDDETVSVLSKKSGTQPRPI    192
+                        | | |     | :            ::  |:   :| :   :  |  
+B_Sequence       150 RTNSITIPGSMDRRRSSVSLRRRRSSFAAAHHDQLAKILEESDDSGTRLW    199
+
+A_Sequence       193 PRAAKS---YGTFLAASLNLPFGSKALMEVKTGFTNRRLLQEHSMEHSAF    239
+                      | | |    |   ||   | : | |    |   |:       | | :| 
+B_Sequence       200 FRNAMSVLAIGVVGAAGWALAYESGAW---KPSPTSG---GADSEEMAAG    243
+
+A_Sequence       240 GQWLGWLMAAIYMGGRIPQIWLNIKRGNVEGLNPLMFIFALIANATYVAS    289
+                      | ||:| |  |:| |||||  | :  : |||: | || :|: | || | 
+B_Sequence       244 AQVLGYLSAVAYLGARIPQIIKNARDRSCEGLSLLFFILSLMGNLTYGAG    293
+
+A_Sequence       290 ILVRTTEWGPIKANMPWLLDAVVCVALDLFIILQYIYYKYFRQTDNSDGE    339
+                     ||  :||   :  |:|||: ::  :  |: | :|:  ||  :: ||::  
+B_Sequence       294 ILCHSTEHKYVIKNLPWLIGSLGTMVEDITIFIQFHLYK-IKEEDNAESP    342
+
+A_Sequence       340 DY    341
+                     ::
+B_Sequence       343 EH    344
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	10.55 +/- 5.82
+Standard score (Z):	50.0
+Precise score (Z):	50.397
+Shuffles:	1000

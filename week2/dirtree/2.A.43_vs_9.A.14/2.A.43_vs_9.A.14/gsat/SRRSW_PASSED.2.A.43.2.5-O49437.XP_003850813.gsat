@@ -1,0 +1,54 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 315
+# Identity:     100/315 (31.7%)
+# Similarity:   149/315 (47.3%)
+# Gaps:          43/315 (13.7%)
+# Score: 300.0
+# 
+#
+#=======================================
+
+A_Sequence         1 DDLSLSLGIISVISWSVAEIPQIMTNYNQKSIEGVSITFLTTWMLGDIFN     50
+                     : ||   | :|: :|    :||:: || |   :|:|:|||  | :||: |
+B_Sequence         1 EALSGVWGSVSLAAWIFLLVPQLIENYQQGHADGISLTFLFIWAIGDVCN     50
+
+A_Sequence        51 VVGCLMEPASLPVQFYTAVLYTLATLVLYVQSIYYGHIYPRLMKNRRNHQ    100
+                     :|| |     :|     |: :  |  :| :| :||     |  |      
+B_Sequence        51 LVGALW-AGLVPTVIALAIYFCFADTILILQCLYYNSRKSRAQKETSGGV     99
+
+A_Sequence       101 MVDV----EEPLLR----EEAKRPSTKSLLCVVSVFLFL-GSFNVLS--G    139
+                     :       : |||:    : | ||| : |  |    : | ||    |   
+B_Sequence       100 IASTGASEQSPLLQGDTNKHAARPS-RRLTDVTEENMGLPGSRRRSSAFS    148
+
+A_Sequence       140 SRSMD------------------LRGKDRVFV---VGGAG---ARKL---    162
+                     ||  |                  ::    :|:   || ||   | |    
+B_Sequence       149 SRRHDHNDSLSRVLEEPTKTHSTVKNTVSIFLVMAVGAAGWAIAWKTGAW    198
+
+A_Sequence       163 -LEVSSGNLGENNN-IGM-WLGWAMAAIYMGGRLPQICMNVRRGNVEGLN    209
+                          ||: |:::  ||   ||:| |  |:| |:|||  | |  : :||:
+B_Sequence       199 RPSTVSGDGGDDHTPIGAEILGYASAVCYLGARIPQIIKNQREKSCDGLS    248
+
+A_Sequence       210 PLMFFFAFIGNVTYVASILVNSVEWSKIEPNLPWLVDSGGCAVLDFLILL    259
+                      | |  : :||:|| | || :|||   |  |||||: | |    | :| :
+B_Sequence       249 LLFFLLSLLGNLTYGAGILFHSVEKQYIITNLPWLIGSLGTMAEDAIIFI    298
+
+A_Sequence       260 QFFYFHCRKVEADSV    274
+                     ||  |  :| :  :|
+B_Sequence       299 QFHAFGEKKQDTSAV    313
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	13.42 +/- 6.50
+Standard score (Z):	44.0
+Precise score (Z):	44.084
+Shuffles:	1000

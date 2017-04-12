@@ -1,0 +1,54 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 344
+# Identity:     121/344 (35.2%)
+# Similarity:   183/344 (53.2%)
+# Gaps:          17/344 ( 4.9%)
+# Score: 480.0
+# 
+#
+#=======================================
+
+A_Sequence         1 SSTEDGIKRIQDDCPKAGRHNYIFVMIPTLYSIIFVVGIFGNSLVVIVIY     50
+                     : |:|    :   | |     :     | || ||||||  || |:|| |:
+B_Sequence         1 TDTDDYEPELDGLCSKELVRQFSKNFEPPLYWIIFVVGALGN-LLVICIF     49
+
+A_Sequence        51 FYM--KLKTVASVFLLNLALADLCFLLTLPLWAVYTAMEYRWPFGNYLCK     98
+                       :  :|||:  |:|||||:||| || ||| ||   |    | |   :||
+B_Sequence        50 TTVRNRLKTMTDVYLLNLAVADLIFLGTLPFWATNAAQ--GWVFHQVICK     97
+
+A_Sequence        99 IASASVSFNLYASVFLLTCLSIDRYLAIVHPMKSR--LRRTMLVAKVTCI    146
+                       ||:   | :||: ||||:|:|||:||||  ::     : || :|:|| 
+B_Sequence        98 GVSAAYKINFFASMLLLTCISVDRYIAIVHVTEAHNYKNKRMLHSKITCA    147
+
+A_Sequence       147 IIWLLAGLASLPAIIHRNVFFIE-NTNITVCAFHYESQNSTLPIGLGLTK    195
+                      :|| : : :||  |   |  ||   |  |  :     | |  : | | :
+B_Sequence       148 FVWLASCILALPEFIFAKVKNIEPQHNSCVMVYSIMDNNRTKVLVLAL-Q    196
+
+A_Sequence       196 NILGFLFPFLIILTSYTLIWKALKKAYEIQKNKPRNDDIFKIIMAIVLFF    245
+                       :||| ||::|:  |::| : | :|   :|:|       ::|:|:|  |
+B_Sequence       197 ICVGFLVPFMVIVLCYSVIIRKLMQARSFEKHK-----ALRVIIAVVAVF    241
+
+A_Sequence       246 FFSWIPHQIFTFLDV-LIQLGIIRDCRIADIVDTAMPITICIAYFNNCLN    294
+                      || :|   :  ::        | || :   :|    |   :|| : |||
+B_Sequence       242 VFSQLPLNGYLIIEAGQANNATITDCEVMQRLDMVGQIVKSLAYTHCCLN    291
+
+A_Sequence       295 PLFYGFLGKKFKRYFLQLLKYIPPKAKSHSNLSTKMSTLSYRPS    338
+                     |: | |:| :|::  | ||: :     |  |   |:   : :||
+B_Sequence       292 PILYVFIGVRFQKDLLSLLQCMSCGLGSVEN--CKLQDTNKKPS    333
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	16.65 +/- 7.87
+Standard score (Z):	59.0
+Precise score (Z):	58.875
+Shuffles:	1000

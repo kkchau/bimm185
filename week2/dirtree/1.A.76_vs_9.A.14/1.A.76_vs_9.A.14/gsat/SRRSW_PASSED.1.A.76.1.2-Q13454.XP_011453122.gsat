@@ -1,0 +1,54 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 316
+# Identity:     205/316 (64.9%)
+# Similarity:   261/316 (82.6%)
+# Gaps:           0/316 ( 0.0%)
+# Score: 1164.0
+# 
+#
+#=======================================
+
+A_Sequence         1 LLLLLCIQLGGGQKKKENLLAEKVEQLMEWSSRRSIFRMNGDKFRKFIKA     50
+                     :||:|   :    ||||: | :|| |: ||:::::: ||||||||:::| 
+B_Sequence         1 ILLILTGFIDAAVKKKEDSLGDKVSQMTEWNNKKAVIRMNGDKFRQYVKT     50
+
+A_Sequence        51 PPRNYSMIVMFTALQPQRQCSVCRQANEEYQILANSWRYSSAFCNKLFFS    100
+                      |:|||:||| |||| |||||||:|||:|| ||||||||   : |||||:
+B_Sequence        51 TPKNYSVIVMLTALQAQRQCSVCKQANDEYTILANSWRYYQQYSNKLFFA    100
+
+A_Sequence       101 MVDYDEGTDVFQQLNMNSAPTFMHFPPKGRPKRADTFDLQRIGFAAEQLA    150
+                     |||||||:|||  : :|:|| ||||| ||:||: || |: |:||:|||:|
+B_Sequence       101 MVDYDEGSDVFSSMKINTAPVFMHFPAKGKPKKGDTLDIHRVGFSAEQIA    150
+
+A_Sequence       151 KWIADRTDVHIRVFRPPNYSGTIALALLVSLVGGLLYLRRNNLEFIYNKT    200
+                     ||:|:|||::|||||| |||||:||||| :|:||||||:||||||:||||
+B_Sequence       151 KWVAERTDINIRVFRPTNYSGTLALALLFALIGGLLYLKRNNLEFLYNKT    200
+
+A_Sequence       201 GWAMVSLCIVFAMTSGQMWNHIRGPPYAHKNPHNGQVSYIHGSSQAQFVA    250
+                      |  ::| ::||||||||||||||||  ||||  ||::||||||| ||:|
+B_Sequence       201 VWGGLALFVIFAMTSGQMWNHIRGPPVMHKNPSTGQINYIHGSSQGQFIA    250
+
+A_Sequence       251 ESHIILVLNAAITMGMVLLNEAATSKGDVGKRRIICLVGLGLVVFFFSFL    300
+                     |::|:  ||||:  | |||||| : ||| ||:||: :|||| |  ||| |
+B_Sequence       251 ETYIVFFLNAAVVGGFVLLNEANSVKGDPGKKRILSMVGLGFVAIFFSLL    300
+
+A_Sequence       301 LSIFRSKYHGYPYSDL    316
+                     ||:||||| ||||| |
+B_Sequence       301 LSVFRSKYQGYPYSFL    316
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	12.31 +/- 6.25
+Standard score (Z):	184.0
+Precise score (Z):	184.169
+Shuffles:	1000

@@ -1,0 +1,46 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 208
+# Identity:      46/208 (22.1%)
+# Similarity:    88/208 (42.3%)
+# Gaps:          21/208 (10.1%)
+# Score: 102.0
+# 
+#
+#=======================================
+
+A_Sequence         1 GRLEASNALGWISIAC-WIIVYSPQILENYRLKSGEGLSVGFVVIWLLGD     49
+                     ||::  :  | |:    |:  | |     ::| :   ||:   :   |  
+B_Sequence         1 GRMQDHSGNGMINTTVPWLSSYYPP--SYFQLSNSGTLSLQCHLRVTLP-     47
+
+A_Sequence        50 IFNLAGALMAGLIPTVIIIAVYYTICDVILLFQIYYYR---WTHPVHPA-     95
+                      | |    :   :|:    |: :| | ::|  :    :    |:| :|  
+B_Sequence        48 -FALVATFLTFFLPST---AICFTYCRILLAARRQARQVEALTYPPYPQH     93
+
+A_Sequence        96 SLFLPRPPPPVNDPNSRADEHSPLLRDQPANNSAS-AQTVENNVHDTLSQ    144
+                     |   |  || :       |::|   :| |    |  :   |  :     :
+B_Sequence        94 SPGEPSRPPSLGHAAQEVDDYSH--QDPPVMRQAPLSVNSERRLAHRQGK    141
+
+A_Sequence       145 RALRYALLFGFVIGTGVAAWGINRLMNSGNS--EPMPPREDEVVEWRSQV    192
+                     :||: :|  | ::|   :||    : |   :  | :||   : : |    
+B_Sequence       142 KALKASLTLGVLLGLFFSAWLPFFITNMAQAVCECVPPSLFDAITW----    187
+
+A_Sequence       193 LGYASAIL    200
+                     ||| :: :
+B_Sequence       188 LGYCNSTM    195
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	10.37 +/- 5.83
+Standard score (Z):	16.0
+Precise score (Z):	15.712
+Shuffles:	1000

@@ -1,0 +1,54 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 331
+# Identity:      95/331 (28.7%)
+# Similarity:   168/331 (50.8%)
+# Gaps:          46/331 (13.9%)
+# Score: 312.0
+# 
+#
+#=======================================
+
+A_Sequence         1 SESLGKGYSDGG--CYEQLFVSPEVFVTLG----VISLLENILVIVAIAK     44
+                     :||:   |:: |   |:      :: | ||    |  :| |:||| ||  
+B_Sequence         1 NESIKFFYNNSGKELYDTWRTKDKLVVVLGLTVCVFVMLFNLLVITAIII     50
+
+A_Sequence        45 NKNLHSPMYFFICSLAVADMLVSVSNGSETIVITLLNSTDTDAQSFTVNI     94
+                     |:  | |:|: : :|| ||:   |:         |:  |  :    |:  
+B_Sequence        51 NRRFHYPIYYLLGNLAAADLFAGVA------YTYLMFHTGPNTSKLTIKT     94
+
+A_Sequence        95 DNVIDSVICSSLLASICSLLSIAVDRYFTIFYALQYHNIMTVKRVGIIIS    144
+                       |  |:: :|| ||: :||:|||:|: |||  :| |: |: :|| |:|:
+B_Sequence        95 WLVRQSLLDTSLTASVANLLAIAVERHQTIF-TMQLHSKMSNQRVFILIA    143
+
+A_Sequence       145 CIW---------------AACTVSGI--LFIIYSDSSAVIICLITMFFTM    177
+                     |||                 | :|    :  :||  | :|   ::     
+B_Sequence       144 CIWIIALLLGLIPSFGWSCICNISACSRMAPLYS-RSYLIFWAVSNLVAF    192
+
+A_Sequence       178 LALMASLYVHMFLMARLHIKRIAVLPGTGAIRQGANMKGAITLTILIGVF    227
+                     | :|  :|:|:|:  :  : |::    :    :   :    |: |::  |
+B_Sequence       193 L-IMMGVYLHIFIYVKRKMTRMSQHTSSQPKYRETMINLMKTVFIILSAF    241
+
+A_Sequence       228 VVCWAPFFLHLIF-YISCPQNPYC-VCFMSHFNLYLILIMCNSIIDPLIY    275
+                     |:|| |  : |:   ::|     | |  :  :  :|:|   ||:|:|::|
+B_Sequence       242 VICWTPGQVVLLLDGLNCKS---CNVLAVEKY--FLLLAEINSVINPIVY    286
+
+A_Sequence       276 ALRSQELRKTFKEIIC-CYPLGGLCDLSSRY    305
+                     : |  |:| |||:|:| |      |:  |:|
+B_Sequence       287 SYRDNEMRLTFKQILCFC------CNRGSKY    311
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	24.55 +/- 9.74
+Standard score (Z):	30.0
+Precise score (Z):	29.524
+Shuffles:	1000

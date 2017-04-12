@@ -1,0 +1,82 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 671
+# Identity:     176/671 (26.2%)
+# Similarity:   305/671 (45.5%)
+# Gaps:          82/671 (12.2%)
+# Score: 513.0
+# 
+#
+#=======================================
+
+A_Sequence         1 SKVTEIPSDLPRN---AIELRFVLTKLRVIQKGAFSGFGDLEKIEISQND     47
+                     : :| :||::  |     |||     |  | ||||:| | | |: : ||:
+B_Sequence         1 NNITNLPSNVMHNLHFLEELRLAGNDLTYIPKGAFAGLGSL-KVLMLQNN     49
+
+A_Sequence        48 VLEVIEADVFSNLPKLHEIRIEKANNLLYINPEAFQNLPNLQYLLISNTG     97
+                     :|  : ::   ||  |  : :   |||    | | : | ||: |   :  
+B_Sequence        50 LLRQVPSEALHNLRSLQSLDL-NYNNLDEF-PAAIKTLKNLKELGFHSNN     97
+
+A_Sequence        98 IKHLPDVHKIHSLQKVLLDIQDNINIHTIERNSFVGL-SFESVILWLNKN    146
+                     || :|:   | :   : :   ||  |  : |::|  |    ::||    |
+B_Sequence        98 IKSIPEQAFIGNPSLITIHFYDN-PIQHVGRSAFQHLPELRTLIL----N    142
+
+A_Sequence       147 GIQEIHNCA-FNG-TQLDELNLSDNNNLEELPNDVFHGASGPVILDISRT    194
+                     |  :|       | | |: | |:    |  ||: |        :||:|  
+B_Sequence       143 GASQITEFPDLTGTTSLESLTLT-GAQLVYLPSAVCTQLPNLQVLDLSYN    191
+
+A_Sequence       195 RIHSLPSY-GLENLKK--LRARSTYNLKKLPTLEKLVALMEASLTYPS--    239
+                      |  |||: | : |:|  ||    | ::   | ::|| |    | :    
+B_Sequence       192 HIKDLPSFSGCQRLQKIDLRHNEVYEIRS-TTFQQLVGLRSLDLAWNKIA    240
+
+A_Sequence       240 --HCCAFANW----RRQISELH----PIC------------NKSI-----    262
+                       |  :|::     :  :|  |    |:             | ::     
+B_Sequence       241 VIHPNSFSSLPSLIKLDLSSNHLTSFPVTGLHGLTHLKLTGNSALQDLIP    290
+
+A_Sequence       263 ------LR-QEVDYMTQARG--------QRSSLAEDNESS----YSRGFD    293
+                           ||  |: |  |               : :|  ||    | :   
+B_Sequence       291 SEHFPKLRVMEMPYAYQCCAFAVCDNLKHSGQMNKDENSSADDFYRKDIG    340
+
+A_Sequence       294 MTYTEFDYDLCNEVVD----------VTCSPKPDAFNPCEDIMGYNILRV    333
+                     : : : | |  : ::|          | |:|    | ||: : |  : | 
+B_Sequence       341 LLHLQDDRDFEDFLLDFEEDVKVLHSVQCTPSAGPFKPCDHLFGSWLTRT    390
+
+A_Sequence       334 LIWFISILAITGNIIVLVILTTSQYKLTVP--RFLMCNLAFADLCIGIYL    381
+                      :| | :|:   |   ||| |  :    ||  : |:  :|  :  :|:  
+B_Sequence       391 GVWLIVLLSFVCN--ALVIATVFRPLSYVPSIKLLIGLIAIMNTLMGLSS    438
+
+A_Sequence       382 LLIASVDIHTKSQYHNYAIDWQTGAGCDAAGFFTVFASELSVYTLTAITL    431
+                      ::|:||  |   :  |   |::| ||   || :|||:| |:: ||   |
+B_Sequence       439 GVLATVDALTFGNFAQYGAWWESGVGCQITGFLSVFAAETSIFLLTVAAL    488
+
+A_Sequence       432 ERWHTITHAMQLDCKVQLRHAASVMVMGWIFAFAAALFPIFGISSYMKVS    481
+                     ||  :|    : : |    :    :|  :: :   |: |:   |:|    
+B_Sequence       489 ERGFSIKCTTKFETKSSFINVKLSIVFCFLLSIVIAVSPLLSGSTYGTSP    538
+
+A_Sequence       482 ICLPMDIDSPLSQLYVMSLLVLNVLAFVVICGCYIHIYLTVRNPNIVSSS    531
+                     :| |:    | |  ::::|::|| | |:|:   |  :| ::    :  : 
+B_Sequence       539 LCFPLLFGDPSSMGFMVALVLLNSLCFLVMTIAYTKLYCSLEKGEL-ENI    587
+
+A_Sequence       532 SDTRIAKRMAMLIFTDFLCMAPISFFAISASLKVPLITVSKAKILLVLFH    581
+                      |  : | :|:|:||: :   |::| : |: | :  |:    | :|:|  
+B_Sequence       588 WDCSMVKHIALLLFTNCILYCPVAFLSFSSLLNLTFISPEVNKSILLLII    637
+
+A_Sequence       582 PINSCANPFLYAIFTKNFRRD    602
+                     |: :| || || :|  :|: |
+B_Sequence       638 PLPACLNPLLYILFNPHFKED    658
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	18.21 +/- 8.22
+Standard score (Z):	60.0
+Precise score (Z):	60.175
+Shuffles:	1000

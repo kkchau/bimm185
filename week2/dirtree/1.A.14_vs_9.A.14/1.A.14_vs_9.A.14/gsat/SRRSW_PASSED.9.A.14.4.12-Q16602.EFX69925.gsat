@@ -1,0 +1,58 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 359
+# Identity:     138/359 (38.4%)
+# Similarity:   208/359 (57.9%)
+# Gaps:          24/359 ( 6.7%)
+# Score: 654.0
+# 
+#
+#=======================================
+
+A_Sequence         1 YCNRTWDGWLCWNDVAAGTESMQLCPD--YFQDFDP--SEKVTKICDQDG     46
+                     ||  ||||| ||   :    ::  ||   ||:   |  :    |:|  ||
+B_Sequence         1 YCPPTWDGWTCWPQTSPNQVALAQCPHFIYFETEPPACARNAEKVCTFDG     50
+
+A_Sequence        47 NWFR--HPASNRTWTNYTQCN-VNTHEKVKTALNLFYLTIIGHGLSIASL     93
+                      |:|     ::   |||: |: | |  | :  ::|:      : :|:|:|
+B_Sequence        51 TWYRRGETGASTEKTNYSPCSPVGTF-KQRAHVHLY-----AYAVSVATL     94
+
+A_Sequence        94 LISLGIFFYFKSLSCQRITLHKNLFFSFVCNSVVTIIH-----LTAVANN    138
+                     | :: ||: :| |:  || ||||:| | : ||:: |:      |  :| :
+B_Sequence        95 LPAIFIFYSYKQLNVYRIRLHKNMFISILLNSILVIVFKVFMILPQIATS    144
+
+A_Sequence       139 ---QALVATNPVSCKVSQFIHLYLMGCNYFWMLCEGIYLHTLIVVAVFAE    185
+                         : :  | : |::      ||   || || ||| ||| ||  | |||
+B_Sequence       145 GKKDSYINQNALVCRLMLITVKYLRLTNYAWMFCEGFYLHRLI-AAAFAE    193
+
+A_Sequence       186 KQHLMWYYFLGWGFPLIPACIHAIARSLYYNDNCWISSDTHLLYIIHGPI    235
+                     :     :| :||  || |  |:|| ||::|:  |||     | :::: | 
+B_Sequence       194 QSSFSVFYVIGWVLPLFPTGIYAIIRSIWYDSRCWIEPIETLEWVLNTPC    243
+
+A_Sequence       236 CAALLVNLFFLLNIVRVLITKLKVTHQAESNLYMKAVRATLILVPLLGIE    285
+                       :|:||| ||:||:|:|: ||: |: || : | |||||||:|||| |: 
+B_Sequence       244 LFSLVVNLIFLVNIIRILVMKLRSTNTAEPSQYRKAVRATLVLVPLFGLH    293
+
+A_Sequence       286 FVLIPWRP--EGKIAEEVYDYIMHILMHFQGLLVSTIFCFFNGEVQAILR    333
+                     ||:  :||  :|    | | |   :|   || ||: |||: ||||  :|:
+B_Sequence       294 FVVTIYRPSKDGCDWMEFYHYANALLDGLQGFLVAIIFCYGNGEVHYLLK    343
+
+A_Sequence       334 RNWNQYKIQ    342
+                     |:: ::| |
+B_Sequence       344 RSYRRFKEQ    352
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	15.25 +/- 7.55
+Standard score (Z):	85.0
+Precise score (Z):	84.573
+Shuffles:	1000

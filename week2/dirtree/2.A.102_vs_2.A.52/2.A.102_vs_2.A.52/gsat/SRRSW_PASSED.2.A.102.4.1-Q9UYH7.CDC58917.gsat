@@ -1,0 +1,46 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 247
+# Identity:      74/247 (30.0%)
+# Similarity:   133/247 (53.8%)
+# Gaps:          36/247 (14.6%)
+# Score: 251.0
+# 
+#
+#=======================================
+
+A_Sequence         1 MGVEIHHAVGTSSASIIFTALSSSYAYHRQKRILYRVGILLASTAVVGAY     50
+                     :|::| :|:| |  ::| |:  |: |: |   :  || : |     :|| 
+B_Sequence         1 LGMDIKYAIGASIIAVIATSSGSTIAFLRDDVLNLRVAMFLEIFTTIGAI     50
+
+A_Sequence        51 LGAWMTSFISPGKLKVIFGVTLIFVAYRMFRG-KRGE---RR-------E     89
+                     :|| :|   :|  | |:||  |:| :: |:|  :||:   :|       |
+B_Sequence        51 IGALLTGVFNPMILYVLFGALLVFSSWNMYRKLRRGQEVLKRVEPDKLAE    100
+
+A_Sequence        90 EISVNEKL---------------VPIGG----FFSGIASGLLGVGGGIIN    120
+                     :  :|                  :| ||    | :|:|||:||:| |   
+B_Sequence       101 KFKLNSSYYDKNLHKQIDYQVENIP-GGAAIMFGAGLASGMLGIGSGAFK    149
+
+A_Sequence       121 VPLLTW-LGVPIHYAVATSSFAIVFTSTSSAIKHYFLGNV--ELYWLPLL    167
+                     |  :   : :|:  : |||:  :  |: :||  ::| |::  |:  :|| 
+B_Sequence       150 VMAMDGAMKMPLKPSSATSNLMMGVTAAASATVYFFNGSIKPEIA-VPLA    198
+
+A_Sequence       168 VPGLIIGAQIGARIAKRTKASSLRKGFAVVMLILAIRMILKGLGYSV    214
+                     : |:| || :|:|| :   :  :|  |  ::| | ::||||| | ::
+B_Sequence       199 L-GIIGGATVGSRIMQLLPSKIIRGIFIPILLYLGLQMILKGFGVTI    244
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	26.98 +/- 8.82
+Standard score (Z):	25.0
+Precise score (Z):	25.396
+Shuffles:	1000

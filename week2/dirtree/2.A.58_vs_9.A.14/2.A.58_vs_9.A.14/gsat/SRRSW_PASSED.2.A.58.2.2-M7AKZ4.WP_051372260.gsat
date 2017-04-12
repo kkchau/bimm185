@@ -1,0 +1,54 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 327
+# Identity:     108/327 (33.0%)
+# Similarity:   180/327 (55.0%)
+# Gaps:          18/327 ( 5.5%)
+# Score: 458.0
+# 
+#
+#=======================================
+
+A_Sequence         1 QLIGGLGLFLYGMEHMSTSMQKIAGSKLKKILASLTNNRIFGILVGIIIT     50
+                     ::  |: :||:||  :    :   |  |:::||  | :    |  ||: |
+B_Sequence         1 EIAAGVAIFLFGMLMLEDGFKLFGGGTLEQVLARATASTPRAIGFGIVAT     50
+
+A_Sequence        51 ALVQSSSVSTVMTIGFVNASLLTLKQALGVILGANIGTTITGWLLA----     96
+                     :|:||||: :|:|| |::| |::|   :|:: |||||||   ||:|    
+B_Sequence        51 SLLQSSSLVSVITISFLSAGLISLIGGVGIVFGANIGTTTGAWLVAGLGL    100
+
+A_Sequence        97 -LNIGKYGLPIVGLASILFMFMKKEKARTNLSAIIGVGLIFFGLQLMSQA    145
+                      :||  | :|:: | ||: :| |    |    |: |:| :| |:  | : 
+B_Sequence       101 KVNIAAYAMPMIAL-SIVLVFQKSRPLRGIGYALAGLGFLFLGIHYMKEG    149
+
+A_Sequence       146 LSPLKDMPEFIEMFKMFKVDSYFGLLKVAATGAIITALIQSSAATIGITI    195
+                         ||    |:: : | :    ||:  :  |   | ::||| ||: : :
+B_Sequence       150 FDAFKDQ---IDLTR-FALSGLIGLIVYSIVGMFATVVMQSSHATMVLIL    195
+
+A_Sequence       196 ALATQGLIDYQAAVALVLGENVGTTITALLASLGAKPNAKRAAYAHTLIN    245
+                          | | |: |:|| :| |:||||||:: ||||    || | || : |
+B_Sequence       196 TALAAGQISYENALALAIGANIGTTITAIIGSLGANHQGKRLALAHLIFN    245
+
+A_Sequence       246 L----IGVIWVTSIFRIYLHFLNLFVD--PVNHMGAAIAAAHTIFNISNV    289
+                          : :|::  : |  :  ::  |   | ::    :|  ||:||:  |
+B_Sequence       246 TLTAGLALIFIVQL-RDAVDAISALVGIAPDDY-ALKLAVFHTVFNLLGV    293
+
+A_Sequence       290 IILTPFVSLLDKFLLFVVKDTGEDEVR    316
+                     :|: ||:  | : |   : |   |  |
+B_Sequence       294 VIMLPFLQRLVRLLERRIADPQPDVSR    320
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	47.22 +/- 10.63
+Standard score (Z):	39.0
+Precise score (Z):	38.646
+Shuffles:	1000

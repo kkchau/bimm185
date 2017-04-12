@@ -1,0 +1,54 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 307
+# Identity:     174/307 (56.7%)
+# Similarity:   229/307 (74.6%)
+# Gaps:           1/307 ( 0.3%)
+# Score: 950.0
+# 
+#
+#=======================================
+
+A_Sequence         1 NGQKKKETLLSEKVSQMMEWVSKRAVVRLNGEKFKRLVRAHPRNYSVIVM     50
+                     |  |  :| ||::| |: |   |: | : || |||  |:  |||||:|||
+B_Sequence         1 NRIKPGQTSLSDRVQQLTEMAMKKPVFKFNGAKFKEYVKTPPRNYSIIVM     50
+
+A_Sequence        51 FTALQPQRQCGVCRQADEEYQILANSWRYSSAFTNRIFFAMVDFDEGSDV    100
+                     |||: |||:| :|: | ||:  :|||:|||  ::|::||| |||||||||
+B_Sequence        51 FTAMAPQRKCQICQHAHEEFITVANSFRYSQFYSNKLFFATVDFDEGSDV    100
+
+A_Sequence       101 FQMLNMNSAPTFINFPAKGKPKRADTYELQVRGFAAEQLARWVADRTDVH    150
+                     |||: :|:|| ||:|||||||| ||| ::|  ||:|| :|:|:::|||: 
+B_Sequence       101 FQMMRLNTAPVFIHFPAKGKPKSADTMDIQRIGFSAEAIAKWISERTDIQ    150
+
+A_Sequence       151 IRVIRPPNYAGPLMLGLLLAFIGSLAYLRRNNLEFLFNKNVWAFSALCFV    200
+                     ||| |||||:| : : :||  ||   |||||||:|::|| :|:  |: | 
+B_Sequence       151 IRVFRPPNYSGTVAVIMLLILIGGFLYLRRNNLDFIYNKTIWSLGAMFFT    200
+
+A_Sequence       201 LIMTSGQMWNHIRGPPYAHKNPNTGQVSYIHGSSQAQFVAETHIVLLFNA    250
+                     | | ||||||||||||: ||  | | : ||||||| ||| |::||:: | 
+B_Sequence       201 LTMISGQMWNHIRGPPFIHKAAN-GNIVYIHGSSQGQFVLESYIVMILNG    249
+
+A_Sequence       251 AVTIGMVLLHEAATSGLDIVKRKIMCVAGIGLVVLFFSWLLSVFRAKYHG    300
+                     || :||:|: |||    || ||:|  | |:||| :||| |||:|| |   
+B_Sequence       250 AVILGMLLMTEAACRKGDIKKRRIFAVIGLGLVAVFFSLLLSIFRNKAQA    299
+
+A_Sequence       301 YPYSFLF    307
+                     |||| ||
+B_Sequence       300 YPYSLLF    306
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	13.88 +/- 6.65
+Standard score (Z):	141.0
+Precise score (Z):	140.74
+Shuffles:	1000

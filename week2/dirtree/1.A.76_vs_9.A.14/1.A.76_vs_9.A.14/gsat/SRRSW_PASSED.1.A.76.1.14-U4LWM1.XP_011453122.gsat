@@ -1,0 +1,54 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 323
+# Identity:     103/323 (31.9%)
+# Similarity:   161/323 (49.8%)
+# Gaps:          18/323 ( 5.6%)
+# Score: 419.0
+# 
+#
+#=======================================
+
+A_Sequence         1 LLAITPFCSASATVDDKTL--KFSQLLTSNAKSGVIQLNNELYNA-ITTA     47
+                     || :| |  |:    : :|  | ||:   | |  ||::| : :   : | 
+B_Sequence         1 LLILTGFIDAAVKKKEDSLGDKVSQMTEWNNKKAVIRMNGDKFRQYVKTT     50
+
+A_Sequence        48 PRNYTAVVLLTALAPQFGCQLCKDFQPEYDLLAKSWQGQHKNGDGLFFSS     97
+                     |:||: :|:||||  |  | :||    || :|| ||:   :  : |||: 
+B_Sequence        51 PKNYSVIVMLTALQAQRQCSVCKQANDEYTILANSWRYYQQYSNKLFFAM    100
+
+A_Sequence        98 LDFQNGRETFMKLGLNTAPILYLFPPTVGP-DADPLHHTTPKQFDFQSNR    146
+                     :|:  | : |  : :||||:   ||    |   | |        |     
+B_Sequence       101 VDYDEGSDVFSSMKINTAPVFMHFPAKGKPKKGDTL--------DIHRVG    142
+
+A_Sequence       147 IPAEAVAHWISNNGPHKPEIVRPFNYEKLFMTLGAIFA--GALILLLSFK    194
+                       || :| |::        : || ||    : |  :||  | | | |   
+B_Sequence       143 FSAEQIAKWVAERTDINIRVFRPTNYSGT-LALALLFALIGGL-LYLKRN    190
+
+A_Sequence       195 TLKPALYSRNLWSAISLILILLFTSGHMFNHIRSVPYVANN-GRGGVSYV    243
+                      |:  ||:: :|  ::| :|   ||| |:||||  | :  |   | ::|:
+B_Sequence       191 NLE-FLYNKTVWGGLALFVIFAMTSGQMWNHIRGPPVMHKNPSTGQINYI    239
+
+A_Sequence       244 AGGFSNQFGLETQIVAVVYAVLAFCAIALSMKMPRVADPTRQKIAILLWN    293
+                      |    ||  || ||  : | :    : |:       || :::|  ::  
+B_Sequence       240 HGSSQGQFIAETYIVFFLNAAVVGGFVLLNEANSVKGDPGKKRILSMVGL    289
+
+A_Sequence       294 AILLCGFSFLMTLFRMKNGGYPF    316
+                       :   || |:::|| |  |||:
+B_Sequence       290 GFVAIFFSLLLSVFRSKYQGYPY    312
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	12.84 +/- 6.24
+Standard score (Z):	65.0
+Precise score (Z):	65.041
+Shuffles:	1000

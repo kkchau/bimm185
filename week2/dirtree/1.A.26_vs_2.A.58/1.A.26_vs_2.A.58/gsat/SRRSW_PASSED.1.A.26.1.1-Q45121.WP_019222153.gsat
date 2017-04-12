@@ -1,0 +1,54 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 325
+# Identity:     112/325 (34.5%)
+# Similarity:   192/325 (59.1%)
+# Gaps:          18/325 ( 5.5%)
+# Score: 501.0
+# 
+#
+#=======================================
+
+A_Sequence         1 MTKEFIRVTAVETVAEVIGRLRKEAPDAETIYYLYVVDERE-KLVGVVSL     49
+                     || ||| : |  || : :  :|      ||:|  ||:: :   |:  |||
+B_Sequence         1 MTTEFIAIPANWTVKKTLDYIRDVERTRETVYTSYVIEPKTGTLLKAVSL     50
+
+A_Sequence        50 RDLIVAEEVDLVQDVMSREV--VSVSAKTDQEDVARLIKKYDFLAAPVIS     97
+                     |:||:|   : : :| : :   :::|  |  ||:||| :::| |: ||| 
+B_Sequence        51 RNLILASPDEPILNVSTHDTSPITISPLTHHEDIARLFQRHDLLSVPVID    100
+
+A_Sequence        98 SEGKLVGIVTVDDIIDILEEEATEDLGEFSASKGATD---VDVSSFQAAK    144
+                         ::|||||||::| : :| :||  :|   : | |   : ::     |
+B_Sequence       101 EGNHVIGIVTVDDVLDTMVDEMSEDAYKFGGME-ALDKPYMQINFLGMMK    149
+
+A_Sequence       145 KRAPWIILLMFFG-LITAEVIGQFEETLEAIVLLAAFIPLLMDSAGNTGT    193
+                     ||  |: || | | ::||  :  ||  || :: |  ||||:| | ||:|:
+B_Sequence       150 KRGGWLALL-FLGEMLTASAMQYFETELEKVITLTLFIPLIMSSGGNSGS    198
+
+A_Sequence       194 QSLAVAVRGLALGTVERDGVWKMLKRE----LGTGLMLGFICMLVIA---    236
+                     |: :: :| |||  :     ||:: ||    :  |::|| | |: ||   
+B_Sequence       199 QATSLIIRALALRELTLQDWWKIILREIPAGISLGILLGIIGMMRIAIWQ    248
+
+A_Sequence       237 GIVTVMHGN--MMLAFIVGISIFLTLSIATIIGTIVPLIINKMKLDPAIA    284
+                     |:    :|   : :|  || ::   ::  :: |:::| |:  :  ||| |
+B_Sequence       249 GLGIYDYGEHWIFIAMTVGTALIGVVTFGSLSGSMLPFILKSLGFDPASA    298
+
+A_Sequence       285 SGPFITTVNDILGLLIYFSIATALL    309
+                     | | : |: |::|::||||:|: :|
+B_Sequence       299 SAPLVATLVDVMGIVIYFSVASLIL    323
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	26.12 +/- 9.34
+Standard score (Z):	51.0
+Precise score (Z):	50.822
+Shuffles:	1000

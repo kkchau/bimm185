@@ -1,0 +1,42 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 195
+# Identity:      56/195 (28.7%)
+# Similarity:    84/195 (43.1%)
+# Gaps:          22/195 (11.3%)
+# Score: 99.0
+# 
+#
+#=======================================
+
+A_Sequence         1 VPAEQ-RDQHFFATLDFL-EGQDIFKRLGLSSAPVLQFYPALEGPHVKPK     48
+                     | ||  ||  || | | : :  | |:|  | ||||:  :  : |  :   
+B_Sequence         1 VSAEMTRDVVFFFTDDRMRDAVDAFERYDLVSAPVVNLHDQVVG-RLTVD     49
+
+A_Sequence        49 SQRLEFSYDFNRHGFAADGLAHDLSSHTPVPIPFTPPFNWQPWFFG---A     95
+                         |     |  |    ||: :     || :  :    | ||  |    
+B_Sequence        50 DVVDEMRERANSEGLRQVGLSDEQDLFAPV-LK-SARARW-PW-LGINLV     95
+
+A_Sequence        96 TFLLLSAIAGRFAWMYLGEIIMNRWLWAVLTVVLSLVMTSGYM--FVQIR    143
+                     |  : | : | |  :   |:::   | |:: :| |:   ||     : ||
+B_Sequence        96 TAFMASRVIGAFEPII--EVLVA--LAALMPIVASIGGNSGNQSAALVIR    141
+
+A_Sequence       144 GMPYSQRGSMIAGGFQNQYGIETNL-VAALYGLLGSAYLALILLV    187
+                     |:  :| ||      |    :|  | :||  |||    | :  :|
+B_Sequence       142 GLALNQLGS-----HQLWRMLEKELRIAAFNGLLCGLILGIATIV    181
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	12.86 +/- 5.93
+Standard score (Z):	15.0
+Precise score (Z):	14.522
+Shuffles:	1000

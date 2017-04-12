@@ -1,0 +1,58 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 354
+# Identity:      95/354 (26.8%)
+# Similarity:   159/354 (44.9%)
+# Gaps:          65/354 (18.4%)
+# Score: 249.0
+# 
+#
+#=======================================
+
+A_Sequence         1 IPIILNAKNLSGMAGSISICCWIVVFVPQIYENFRRQSAEGLSLLFIVLW     50
+                     ||  | |  || : | :||  |:   :|||::|:  :|  |||: |:  |
+B_Sequence         1 IPTPLAA--LSTLLGVLSIISWLFAQMPQIFKNYHIKSTAGLSIFFLAEW     48
+
+A_Sequence        51 LLGDIFNVMGAMMQNLLPTMIILAAYYTLADLILLIQCMWYDKEKKSILQ    100
+                     ||||: |::||:        ||:|:||   |: |::|  ||    | :  
+B_Sequence        49 LLGDLTNLLGALFTRQAGWQIIIASYYVFVDVCLVVQYFWYTYAVKWVYA     98
+
+A_Sequence       101 EVKKNVDPVHLPPANP--INE-TVLQDVFNEYEPLLPRIEEE--------    139
+                     |   :     :  |:   ||  : :   | | | |||  : |        
+B_Sequence        99 ESLHSSGSSDMDDADSDMINSLSPINTNFAEEETLLPESDHEPPKSAKPR    148
+
+A_Sequence       140 DSQS--YSSLELGRTIVVKER----ENFFNDFLIVSG---VLIAGILSWY    180
+                     | |:  :| :  |            : | : ::: :    :: || ::  
+B_Sequence       149 DVQAPQFSQINYGEKNGTPRTHPSGDKFGSSWMMSTSPRTLMYAGTIASL    198
+
+A_Sequence       181 ISYCSGLDNGIPKKKPAFE------QINLPAQ----ILGYLSAILYLGSR    220
+                      |  :      |     ::      ::  | :    || : |  ||||||
+B_Sequence       199 ASNAAAAP--FPNPHLHYQHGIHLFRVETPLEVAGTILSWCSTFLYLGSR    246
+
+A_Sequence       221 IPQIVLNFKRKSCEGVSFLFFLFACLGN----TSFIIS------------    254
+                     :||:  |::|:|  |:| | |  |  ||    || : :            
+B_Sequence       247 LPQLYKNWQRQSTAGLSPLLFGAAFCGNLFYSTSMVTNPNAWGDHRPYGH    296
+
+A_Sequence       255 ---------------VLSASWLIGSAGTLLMDFTVFIQFFLYAKPKYEKI    289
+                                    | :| : :|||| | ||  : :|| :| : :   |
+B_Sequence       297 HGWVDAHGSQRWAWVVRAAPFFLGSAGCLSMDALMGVQFVIYGEQEARVI    346
+
+A_Sequence       290 LIDN    293
+                      : :
+B_Sequence       347 KVRD    350
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	11.16 +/- 5.93
+Standard score (Z):	40.0
+Precise score (Z):	40.094
+Shuffles:	1000

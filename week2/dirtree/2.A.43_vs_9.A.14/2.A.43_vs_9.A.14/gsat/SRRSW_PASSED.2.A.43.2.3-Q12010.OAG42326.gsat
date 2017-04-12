@@ -1,0 +1,54 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 337
+# Identity:     111/337 (32.9%)
+# Similarity:   171/337 (50.7%)
+# Gaps:          49/337 (14.5%)
+# Score: 432.0
+# 
+#
+#=======================================
+
+A_Sequence         1 NRSTLSGISGSISISCWIIVFVPQIYENFYRKSSDGLSLLFVVLWLAGDV     50
+                      |   ||| ||||::||| : |||: ||:   |:: :||||: :|  ||:
+B_Sequence         1 TREAFSGIFGSISLACWIFLLVPQLIENYRNGSAEAISLLFIFVWFLGDI     50
+
+A_Sequence        51 FNLMGAVMQHLLSTMIILAAYYTVADIILLGQCLWYD--NEEKPA-----     93
+                      || ||:   |:  :: :  |: :|| :|:||||:|   |: : |     
+B_Sequence        51 ANLAGALWAGLVPVVVAIGVYFCIADGVLIGQCLYYGIRNKRREARALLS    100
+
+A_Sequence        94 ------------------VD-PIHLSPANPIN-ENVLHDVFNEQQPLL--    121
+                                        |     :|:   : |   |   :|::|||  
+B_Sequence       101 TRASASSSSGAAAAAPTGADGETGAAPSGAADGEQSRHG-SSEEEPLLKR    149
+
+A_Sequence       122 ---NSQGQPNRIDEEMAA------PSSDGNAGDDNLREV-------NSRN    155
+                        ||   |  :|   ::       ||   |  | | ::        :| 
+B_Sequence       150 TRTNSITIPGSMDRRRSSVSLRRRRSSFAAAHHDQLAKILEESDDSGTRL    199
+
+A_Sequence       156 LIKDIFIVSGVVFVGFISWYVTYCVNYTQPPPVEDPSLPVPELQINWMAQ    205
+                       ::   |  :  ||   | : |     :| |         |:     ||
+B_Sequence       200 WFRNAMSVLAIGVVGAAGWALAYESGAWKPSPTSG-GADSEEMAAG--AQ    246
+
+A_Sequence       206 IFGYLSALLYLGSRIPQILLNFKRKSCEGISFLFFLFACLGNTTFIFSVI    255
+                     : |||||: |||:|||||: | : :||||:| |||: : :|| |:   ::
+B_Sequence       247 VLGYLSAVAYLGARIPQIIKNARDRSCEGLSLLFFILSLMGNLTYGAGIL    296
+
+A_Sequence       256 VISLDWKYLIMNASWLVGSIGTLFMDFVIFSQFFIYK    292
+                       | : ||:| |  ||:||:||:  |  || || :||
+B_Sequence       297 CHSTEHKYVIKNLPWLIGSLGTMVEDITIFIQFHLYK    333
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	12.34 +/- 5.52
+Standard score (Z):	76.0
+Precise score (Z):	76.054
+Shuffles:	1000

@@ -1,0 +1,58 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 355
+# Identity:     141/355 (39.7%)
+# Similarity:   219/355 (61.7%)
+# Gaps:          21/355 ( 5.9%)
+# Score: 660.0
+# 
+#
+#=======================================
+
+A_Sequence         1 AWTRTERRRLASVVGAIVILHVLGVALYLGYSGNPA------AAGGL--A     42
+                     |: | |  ||  ::| :| |||:|  |:: |:          : | |  |
+B_Sequence         1 AFDRGEVLRLTWLLGVVVALHVIGFGLFIHYNSMSKYHEISDSHGTLLYA     50
+
+A_Sequence        43 GSGVLAYVLGVRHAFDADHIAAIDDTTRLMLLRGRRPVGVGFFFAMGHST     92
+                     |:  |||| |:||||||||||||||||||:| :||:|:|||  |::||||
+B_Sequence        51 GAASLAYVFGLRHAFDADHIAAIDDTTRLLLQKGRKPLGVGLAFSLGHST    100
+
+A_Sequence        93 VVVVLALVVALGASALTTTELEGVQEIGGLVATVVAVTFLSIVAGLNSVV    142
+                     ||: |:: :|  |:| |: : :|    | :: : |: ||| |||  | |:
+B_Sequence       101 VVLGLSVGIAFAANAATSFQ-DGFSGTGSIIGSSVSGTFLYIVAVFNFVI    149
+
+A_Sequence       143 LRNLLCLSRQVRAGSDITGDLESRLSERGLFTRLLGNRWRGLVRSSWHMY    192
+                     |  :  : | :::|:     |:  |: ||   |:   |:   :  || ||
+B_Sequence       150 LIGIWKVWRLIKSGAYEEETLDQLLASRGFMNRIFKGRYNKFISHSWQMY    199
+
+A_Sequence       193 PVGLLMGLGLETASEVTLLTLTASAATGGTLSIA----AVLSLPLLFAAG    238
+                     |||:| ||| :||:|| || ::|||| |||  :     |:::||::||||
+B_Sequence       200 PVGILFGLGFDTATEVGLLGISASAAAGGTTGVTLPPLAIIALPIIFAAG    249
+
+A_Sequence       239 MSTFDTADSLFMTRAYSWSYQDPQRRLNFNIATTGATVVIGLFVAGIYVC    288
+                     ||  || |  || :|| |:: :| |:: :||:||| :: :   |  | : 
+B_Sequence       250 MSLMDTIDGAFMAKAYDWAFNNPVRKVYYNISTTGLSIFVAFVVGTIELA    299
+
+A_Sequence       289 ALLA---HLPMFAALSPIGDISENFEFLGYAVAAAFILTWTGALL---FN    332
+                      ::    |:      | :  :  |   :|| :   |::|| |::|   : 
+B_Sequence       300 DVITSELHVDDQEPWSTVAALDLN--KIGYFIVGVFVVTWAGSVLLWKYR    347
+
+A_Sequence       333 HLKPQ    337
+                     ||: :
+B_Sequence       348 HLEER    352
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	25.36 +/- 9.07
+Standard score (Z):	70.0
+Precise score (Z):	69.954
+Shuffles:	1000

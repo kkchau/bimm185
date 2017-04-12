@@ -1,0 +1,58 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 353
+# Identity:      95/353 (26.9%)
+# Similarity:   156/353 (44.2%)
+# Gaps:          59/353 (16.7%)
+# Score: 346.0
+# 
+#
+#=======================================
+
+A_Sequence         1 NKLHWAALLILMVIIPTIGGNTLVILAVSLEKKLQYATNYFLMSLAVADL     50
+                                                     :: :|   |:|   :   
+B_Sequence         1 -------------------------------DEIFWALKAFVMLFIIIAA     19
+
+A_Sequence        51 LVGLFVMPIALLTIMFEAMWPLPLVLCPAWLFLDVLFSTASIMHLCAISV    100
+                     : |  :: |::: :  :  |     ||  |  ||| ||||||:||| |||
+B_Sequence        20 ICGNLLVIISVMRVR-KLSWNFSPFLCDLWNSLDVYFSTASILHLCCISV     68
+
+A_Sequence       101 DRYIAIKKPIQANQYNSRATAFIKITVVWLISIGIA-IPVPIKGIETD--    147
+                     ||| || ||::     ::    | :   |:    :: :|: |    ||  
+B_Sequence        69 DRYYAIVKPLKYPISMTKRVVGIMLLNTWVSPALLSFLPIFIGWYTTDEH    118
+
+A_Sequence       148 ----VDNPNNITCVLTKERFGDFMLFGSLAAFFTPLAIMIVTYFLTIHAL    193
+                         : :|    |:    ::  : :  |  :|: |  ||| |||    |:
+B_Sequence       119 KVFVIQHPEQ--CMFVVNQY--YAIISSSISFWIPCTIMIFTYF----AI    160
+
+A_Sequence       194 QKKAYLVKNKPPQRLTWLTVSTVFQRDETPCSSPEKVAMLDGSRKDKALP    243
+                      ::|    |:  ::|     : :      |   |   ||  ||   | | 
+B_Sequence       161 FREA----NRQEKQLMMRHGNAMLM--HRPSMQPSGEAM-SGSGSSKTL-    202
+
+A_Sequence       244 NSGDETLMRRTSTIGKKSVQTISNEQRASKVLGIVFFLFLLMWCPFFITN    293
+                      :  |     | |  |  :: :  | :|:: |||:   |:| | |||:  
+B_Sequence       203 -TLHEVEQEHTPTKDKHLIK-MKREHKAARTLGIIMGTFILCWLPFFLWY    250
+
+A_Sequence       294 ITLVLCDSCNQTTLQMLLEIFVWIGYVSSGVNPLVYTLFNKTFRDAFGRY    343
+                        : |  | |    ::: |  |||| :| :|||:|  ||: ||:||   
+B_Sequence       251 TLSMTCAVC-QVP-DIVVSILFWIGYFNSTLNPLIYAYFNRDFREAFRST    298
+
+A_Sequence       344 ITC    346
+                     : |
+B_Sequence       299 LLC    301
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	17.83 +/- 7.57
+Standard score (Z):	43.0
+Precise score (Z):	43.354
+Shuffles:	1000

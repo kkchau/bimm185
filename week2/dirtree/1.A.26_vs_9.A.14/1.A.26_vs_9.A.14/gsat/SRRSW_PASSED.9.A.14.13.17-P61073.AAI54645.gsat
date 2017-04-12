@@ -1,0 +1,58 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 355
+# Identity:     121/355 (34.1%)
+# Similarity:   195/355 (54.9%)
+# Gaps:          18/355 ( 5.1%)
+# Score: 519.0
+# 
+#
+#=======================================
+
+A_Sequence         1 IYTSDNYTEEMGSGDYDSMKEPCFREENANFNKIFLPTIYSIIFLTGIVG     50
+                     |  :|:|  |:     | :   | :|    |:| | | :| |||: | :|
+B_Sequence         1 ITDTDDYEPEL-----DGL---CSKELVRQFSKNFEPPLYWIIFVVGALG     42
+
+A_Sequence        51 NGLVILVM-GYQKKLRSMTDKYRLHLSVADLLFVITLPFWAVDAVANWYF     99
+                     | ||| :    : :|::||| | |:|:||||:|: |||||| :|   | |
+B_Sequence        43 NLLVICIFTTVRNRLKTMTDVYLLNLAVADLIFLGTLPFWATNAAQGWVF     92
+
+A_Sequence       100 GNFLCKAVHVIYTVNLYSSVLILAFISLDRYLAIVHAT--NSQRPRKLLA    147
+                        :|| |   | :| ::|:|:|  ||:|||:|||| |  :: : :::| 
+B_Sequence        93 HQVICKGVSAAYKINFFASMLLLTCISVDRYIAIVHVTEAHNYKNKRMLH    142
+
+A_Sequence       148 EKVVYVGVWIPALLLTIPDFIFANVSEADDRY-ICDRFYP----NDLWVV    192
+                      |:    ||: : :| :|:|||| |   : ::  |   |     |   |:
+B_Sequence       143 SKITCAFVWLASCILALPEFIFAKVKNIEPQHNSCVMVYSIMDNNRTKVL    192
+
+A_Sequence       193 VFQFQHIMVGLILPGIVILSCYCIIISKLSHSKGHQKRKALKTTVILILA    242
+                     |   | | || ::| :||: || :|| ||  ::  :| |||:  : ::  
+B_Sequence       193 VLALQ-ICVGFLVPFMVIVLCYSVIIRKLMQARSFEKHKALRVIIAVVAV    241
+
+A_Sequence       243 FFACWLPYYIGISIDSFILLEIIKQGCEFENTVHKWISITEALAFFHCCL    292
+                     |    ||    : |::          ||    :     | ::||: ||||
+B_Sequence       242 FVFSQLPLNGYLIIEAGQANNATITDCEVMQRLDMVGQIVKSLAYTHCCL    291
+
+A_Sequence       293 NPILYAFLGAKFKTSAQHALTSVSRG-SSLKILSKGKRGGHSSVSTESES    341
+                     ||||| |:| :|:      |  :| |  |::           || :::::
+B_Sequence       292 NPILYVFIGVRFQKDLLSLLQCMSCGLGSVENCKLQDTNKKPSVMSDTDT    341
+
+A_Sequence       342 SSFHS    346
+                     :   |
+B_Sequence       342 TPVFS    346
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	13.04 +/- 7.10
+Standard score (Z):	71.0
+Precise score (Z):	71.266
+Shuffles:	1000

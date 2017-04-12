@@ -1,3 +1,9 @@
 *.txt
 *.faa
 *.bz2
+*.fna
+*.matrix
+*.html
+*.clm
+*.tbl
+*.gsat

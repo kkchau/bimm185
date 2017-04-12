@@ -1,0 +1,58 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 353
+# Identity:     125/353 (35.4%)
+# Similarity:   196/353 (55.5%)
+# Gaps:          15/353 ( 4.2%)
+# Score: 527.0
+# 
+#
+#=======================================
+
+A_Sequence         1 LAFMLYLLLLAVAMVGSGFKWATGDQAKVLFEFASHPIAGLMIGLVATAL     50
+                     |||:|::  : :     |    : |  | :|    :|  || |||: ||:
+B_Sequence         1 LAFVLFVFSIDLLTYSLG--TFSNDVTKDIFTATLNPFVGLFIGLLMTAM     48
+
+A_Sequence        51 IQSSSTVTSIIVGLVA-GGLPVETAIPMVMGANIGTTVTNTLVSLGHMRC     99
+                      |||| :|:::| :|| | | :  |:|::||||||||:|:||||   :  
+B_Sequence        49 FQSSSMITAMVVAVVASGSLSLIQAVPVIMGANIGTTLTSTLVSFTFIMK     98
+
+A_Sequence       100 KEEFRRAFASATIHDFFNLLAVLIFLPLEMMFGILEKVSHWLVSPLLATG    149
+                     : ||:|| |:  :|| ||:| |:|  |||: || |   | :|     |  
+B_Sequence        99 RNEFKRALAAGVLHDIFNILTVIILFPLELYFGFLSYFSEYLTHTFFAAD    148
+
+A_Sequence       150 DMSMKGFDFIKPITKPVITGLETQLSVLGNTFGGVAL-IVLGIATIFVAI    198
+                     | :   | :   ||:|    : |||      |    |  :| |  :| :|
+B_Sequence       149 DPTKSEFIYNVLITRPFTLWI-TQL------FAQPILWFILAILLVFGSI    191
+
+A_Sequence       199 TVMGKLMKSLMVGRAREILQNAIGRGPLHGIASGTVVTVLVQSSSTTTSL    248
+                      :: : :    :    : |   : : ||     | : |  ||||: ||||
+B_Sequence       192 KILSETVYKAFLSTHFKNLSEHVFKAPLLTFIYGILFTAAVQSSTVTTSL    241
+
+A_Sequence       249 MVPLVGSGVLKVREIYPFTLGANIGTCITALLAATAVSGEFAVFALQIAL    298
+                     :|| | :  :|: :|:|| :|||:|| |||::||     | |:    ||:
+B_Sequence       242 VVPAVATRKIKLAKIFPFIIGANMGTTITAIIAA-IYKTEAAI---SIAI    287
+
+A_Sequence       299 VHLSFNLMATVLIYGIPFLRELPIKGAELISTWACKSKMVVVSYLLGVFV    348
+                     ||:  ||:  ::    | :| :|:  |      :   | | ::|:|  | 
+B_Sequence       288 VHVIINLIGALIFLPFPAIRHIPVMIASFFGRISINKKYVSLAYILMTFF    337
+
+A_Sequence       349 VIP    351
+                     :||
+B_Sequence       338 IIP    340
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	39.51 +/- 9.82
+Standard score (Z):	50.0
+Precise score (Z):	49.619
+Shuffles:	1000

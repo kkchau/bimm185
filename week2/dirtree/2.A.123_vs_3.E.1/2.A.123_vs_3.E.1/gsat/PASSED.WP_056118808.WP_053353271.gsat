@@ -1,0 +1,42 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 164
+# Identity:      92/164 (56.1%)
+# Similarity:   129/164 (78.7%)
+# Gaps:           0/164 ( 0.0%)
+# Score: 485.0
+# 
+#
+#=======================================
+
+A_Sequence         1 LEVDGLRWVVVAQMDTAEAFAPVNDFTRNIGLALVGIIVLVSLLSLLLAQ     50
+                     |::: : |::||:::|:||||||  ||||: |:|:||:| ||||||:|||
+B_Sequence         1 LDIEDVDWMIVARINTSEAFAPVAAFTRNVLLSLLGILVAVSLLSLVLAQ     50
+
+A_Sequence        51 VFVRPIRRLQTAVNRVSAGEIGVEVKTKQGDEIGDLGLAFNDMSRSLRVK    100
+                     || ||||||  | : :: |:: | |     || | || |||||: |||:|
+B_Sequence        51 VFTRPIRRLVDATHHIAEGDLDVRVPDASRDEFGGLGSAFNDMASSLRLK    100
+
+A_Sequence       101 QDLLDEQRRQNDTMLLTLMPEEVARRYKQGDETIAEDHQDVAVVYADIIG    150
+                     |||:|||| :|: :| ||||| || ||||||| |:| |::|:| :|:::|
+B_Sequence       101 QDLIDEQRVENEKLLHTLMPESVAARYKQGDEAISEAHENVSVAFAELVG    150
+
+A_Sequence       151 IDDFAAGLTAEESL    164
+                      |::| ||| || :
+B_Sequence       151 FDEYARGLTPEEEI    164
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	21.11 +/- 7.32
+Standard score (Z):	63.0
+Precise score (Z):	63.374
+Shuffles:	1000

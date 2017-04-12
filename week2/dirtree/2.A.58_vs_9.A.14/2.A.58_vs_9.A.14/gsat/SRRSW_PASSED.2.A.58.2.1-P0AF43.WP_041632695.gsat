@@ -1,0 +1,58 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 361
+# Identity:     101/361 (28.0%)
+# Similarity:   184/361 (51.0%)
+# Gaps:          29/361 ( 8.0%)
+# Score: 368.0
+# 
+#
+#=======================================
+
+A_Sequence         1 LLHLLSAVALLVWGTHIVRTGVMRVFGARLRTVLSRSVEKKPLAFCAGIG     50
+                     :| |  :: | ::|  ::   :| : | ::| :|:     : |    |  
+B_Sequence         1 ILQLFGSLGLFLFGMKVMSDALMSLAGDKMRKILATMTSNRFLGIFTGFF     50
+
+A_Sequence        51 VTALVQSSNATTMLVTSFVAQDLVALAPALVIVLGADVGTALMARILTF-     99
+                     :|:::|||:|||::| ||    |: |  :: :::||::|| : | ::|  
+B_Sequence        51 ITSVIQSSSATTLMVVSFSNAGLLTLMESISVIMGANIGTTITAWLITIL    100
+
+A_Sequence       100 ----DLSWLSPLLIFIGVIFFLGRKQSRAGQLGRVGIGLGLILLALELIV    145
+                          :| ::  |: :| :|   :|::     | : ||  :: : |: : 
+B_Sequence       101 GFKVSMSVIALPLVGLGFLFTFAKKENLKNWGGFI-IGFAVLFIGLQFLK    149
+
+A_Sequence       146 QAVTPITQANGVQVIFASLT--G--DILLDALIGAMFAIISYSSLAAVLL    191
+                      ||  | |   :    :  |  |   :||   || :  :|  || | : |
+B_Sequence       150 DAVPDIRQNPEILEFLSRYTDLGFWSVLLFLAIGTILTVIIQSSSATMAL    199
+
+A_Sequence       192 TATLTAAGIISFPVALCLVIGANLGSGLLAMLNNSAANAAARRVALGSLL    241
+                     |  :|| | | ||:|  :|:| |:|: : | |    ||  |:| |   |:
+B_Sequence       200 TLIMTAQGWIPFPLAAAMVLGENIGTTITANLAALVANFHAKRTARAHLI    249
+
+A_Sequence       242 FKLVGSLIIL----P---FVHLLAETMGKLS--LPKAELVI---YFHVFY    279
+                     | ::| : :|    |   ||  |    |  |  :  | : :    ||  :
+B_Sequence       250 FNVIGVIWVLLLFYPFLRFVEWLVSLTGSESPYMSAAAIPVALSLFHTSF    299
+
+A_Sequence       280 NLVRCLVMLPFVDPMARFCKTII--RDEP--ELDTQLRPKHLDVSALDTP    325
+                     |::   |:: |: |:|   : ::  | ||  |:|    || |:   |  |
+B_Sequence       300 NIINTFVLVWFIKPIAAVVERLVQARVEPSKEID---EPKFLNEKVLKYP    346
+
+A_Sequence       326 TLALANAARET    336
+                        | :   |:
+B_Sequence       347 ETLLISLVNES    357
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	36.43 +/- 10.82
+Standard score (Z):	31.0
+Precise score (Z):	30.647
+Shuffles:	1000

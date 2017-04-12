@@ -1,0 +1,58 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 356
+# Identity:      92/356 (25.8%)
+# Similarity:   156/356 (43.8%)
+# Gaps:          28/356 ( 7.9%)
+# Score: 249.0
+# 
+#
+#=======================================
+
+A_Sequence         1 SKLSMLLTVVSILWRFVSICINWSLAYVYWMEESYGYCAWTIGSILVPMV     50
+                     :|:  |||:  :      |  :  ||  |: || | :  :|:  ||: ::
+B_Sequence         1 TKVRWLLTIAGVFLYVGDIWTDIVLAVKYFQEEQYVWTGFTVMFILIGLL     50
+
+A_Sequence        51 VTSVI----YIHTLKSA---HAGEKRILERG----VYSNAV-ISYLFRDV     88
+                     || :     |   |        |:| | :      |  :|  :    |  
+B_Sequence        51 VTQIFSYAWYWDDLNDPLLNPEGKKEISDMSKPGLVVLHAFGLGIFTRYY    100
+
+A_Sequence        89 YVLNYAFKYSLAKERDDKQAEI-EYYQKLMTEECNVSFVRLFDSFLESAP    137
+                     ::|   |     |   |   :: | ::||     ::| ::||::||||||
+B_Sequence       101 HLLKEGFHVVWTKSNGDGVEKLREVHKKLFCVATDLSMLKLFETFLESAP    150
+
+A_Sequence       138 QKILQLAILLQSTLEFTYYRHIALIVYFGNIAWCIQAYNHSNRLAQLDKH    187
+                     | :||| |||    : :  : :::   | |||| :  |    | :     
+B_Sequence       151 QLLLQLYILLGHN-KVSVIQCLSVAFSFCNIAWSLVDYRRCLRRSLPHIR    199
+
+A_Sequence       188 DI-AAKGRFLQFLFLLCLTVSRTLCIAYVASIFPIETLIICATLACFYGT    236
+                     :: :     :  |: :|   |  || : :  |  | |  :  |:     |
+B_Sequence       200 EMPSGLPTAIYILYKICTITSLILCYSLLL-ILSIYT-TVALTVLWLLAT    247
+
+A_Sequence       237 IVFFVDSPMIAKSRPMNYSYCLCFGVVYLFIFTPVKDAPTKYKYAFYLTF    286
+                     |   :        | : : |    ||:  | |  ||   ||     |  |
+B_Sequence       248 IWTHLLETKFCSGRSLEFLYRAVVGVILTFTFFNVKGQDTKVAMTTYYIF    297
+
+A_Sequence       287 CLLQNIIA---CALYIP-LYLATAIIAL-------YIVGIVLLIIYYTYC    325
+                       : ||::    ||  | |  :| :: :        ::|:  ||:||   
+B_Sequence       298 YTIINIMSPSLMALLKPELQTSTLLLTISGLICGCSVLGLACLILYYVQL    347
+
+A_Sequence       326 HPNTVR    331
+                     ||  |:
+B_Sequence       348 HPRRVQ    353
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	25.31 +/- 8.74
+Standard score (Z):	26.0
+Precise score (Z):	25.603
+Shuffles:	1000

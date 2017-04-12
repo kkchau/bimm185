@@ -1,0 +1,54 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 318
+# Identity:     102/318 (32.1%)
+# Similarity:   166/318 (52.2%)
+# Gaps:          15/318 ( 4.7%)
+# Score: 396.0
+# 
+#
+#=======================================
+
+A_Sequence         1 LITCHQIYMHLRCYSCPNEQRYIVRILFIVPIYAFDSWLSLLFFTNDQYY     50
+                     ||    |:|||: |  | :|| ::||  |||::|  |  |:|   :    
+B_Sequence         1 LIIFANIFMHLKNYRKPFQQRLMIRIQLIVPLFAC-SCYSMLSDPSSVMN     49
+
+A_Sequence        51 VY-FGTVRDCYEALVIYNFLSLCYEYLGGESSI-MSEIRGKPIESSCMYG     98
+                      |   ::|: ||| ||| | :|  : |||| :| :|:   ||:    :  
+B_Sequence        50 KYVLESIREVYEAFVIYTFFTLLTDMLGGEKNIVISKSGSKPVSHPGVLR     99
+
+A_Sequence        99 TCCLWGKTYSIGFLRFCKQATLQFCVVKPLMAVSTVVLQAFGKYRDGDFD    148
+                                  |   |:  ||:  :||:: :||:: :  | |   |  
+B_Sequence       100 YIFPEADISDPYTLLAIKRGILQYVWLKPIICLSTILCEIIGWYDVNDLG    149
+
+A_Sequence       149 VTSGYLYVTIIYNISVSLALYALFLFYFATRELLSPYSPVLKFFMVKSVI    198
+                     :|| ||::|||||:||: :|| |  |:      |  :||: ||  || :|
+B_Sequence       150 ITSIYLWLTIIYNLSVTTSLYCLAFFWKILWNDLKKFSPIGKFLCVKLII    199
+
+A_Sequence       199 FLSFWQGMLLAILEKCGAIPKIHSARVSVGEGTVAAGYQDFIICVEMFFA    248
+                     | |:|||::|:||   | :||:           :    |: ::|:|:   
+B_Sequence       200 FASYWQGVILSILSYAGLLPKLDDG--DEKNTNIGIYIQNALLCMEL--V    245
+
+A_Sequence       249 ALALRHAFTYKVYADKRLDA--QGRCAPMKSISSSLKETMNPHDIVQD-A    295
+                       |: | |::  ||  :: |   ||         :||:    ||:| |  
+B_Sequence       246 GFAIGHCFSFS-YAPFKISAIPNGRLL----FPYALKDICGIHDLVHDFK    290
+
+A_Sequence       296 IHNFSPAYQQYTQQSTLE    313
+                     :  :   |: | :  ::|
+B_Sequence       291 LTFYGDYYKDYKKFDSVE    308
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	18.23 +/- 8.42
+Standard score (Z):	45.0
+Precise score (Z):	44.858
+Shuffles:	1000

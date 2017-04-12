@@ -1,0 +1,58 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 357
+# Identity:     113/357 (31.7%)
+# Similarity:   192/357 (53.8%)
+# Gaps:          37/357 (10.4%)
+# Score: 453.0
+# 
+#
+#=======================================
+
+A_Sequence         1 NTLVILAVSLEKKLQYATNYFLMSLAVADLLVGLFVMPIALLTIMFEAMW     50
+                     | ||| |::: :|| :  || : |||| |||| : ||| ::: |  |  |
+B_Sequence         1 NCLVITAIAVTRKLHHPANYLICSLAVTDLLVAVLVMPFSIIYIQKE-RW     49
+
+A_Sequence        51 PLPLVLCPAWLFLDVLFSTASIMHLCAISVDRYIAIKKPIQANQYNSRAT    100
+                      :  |:|  || :|:   | ||:||  |::||| ||   :: ::  : | 
+B_Sequence        50 VMGHVVCTIWLSVDITCCTCSILHLATIAIDRYRAITDAVEYSRKRTGAR     99
+
+A_Sequence       101 AFIKITVVWLISIGIAIPVPI--KGIETDVDNPNNITCVLTKERFGDFML    148
+                     | : | ||||:|| |::| |:  :    | |  :   |::     | | |
+B_Sequence       100 AGVMIAVVWLLSILISLP-PLLWRYYSGDADLEDQ--CIIIHHHLG-FTL    145
+
+A_Sequence       149 FGSLAAFFTPLAIMIVTYFLTIHALQKKAYLVKN-KPPQRLTWLT-----    192
+                     : :| ||: || :::: |:    | |   |: :      | : :|     
+B_Sequence       146 YATLGAFYIPLLLILILYYKIYRAAQ-TLYMRREASRASRHSCMTNGSMI    194
+
+A_Sequence       193 VSTVFQRD---ETPCSSPEKVAMLDGSRKDKALPNSGDETL---------    230
+                      ||    |   :    ||| ::  : |  : :      | :         
+B_Sequence       195 PSTYPAGDGNVDGGLPSPEPISPPEKSTSEPSTEEPPRERVRVSVRAFQY    244
+
+A_Sequence       231 -MRR--TSTIGKKS--VQ----TISNEQRASKVLGIVFFLFLLMWCPFFI    271
+                       ||  : :  ::|   |    : | |:||:  ||::   |:: | |||:
+B_Sequence       245 KSRRHESQSESRRSQFYQGPRISGSRERRAASTLGLIIGAFVICWLPFFV    294
+
+A_Sequence       272 TNITLVLCDSCNQTTLQMLLEIFVWIGYVSSGVNPLVYTLFNKTFRDAFG    321
+                       : :  | ||| |:::|  :   |:||::| :|||:||:||: |: || 
+B_Sequence       295 KEVIVNTCSSCN-TSMEM-ADFLTWLGYLNSLINPLIYTIFNEDFKKAFQ    342
+
+A_Sequence       322 RYITCNY    328
+                     | : |::
+B_Sequence       343 RLVRCSH    349
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	13.76 +/- 6.51
+Standard score (Z):	67.0
+Precise score (Z):	67.488
+Shuffles:	1000

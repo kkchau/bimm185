@@ -1,0 +1,54 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 346
+# Identity:     101/346 (29.2%)
+# Similarity:   149/346 (43.1%)
+# Gaps:          44/346 (12.7%)
+# Score: 277.0
+# 
+#
+#=======================================
+
+A_Sequence         1 KDEFSFTFGLISLVCWGVAEIPQIITNFRTKSSHGVSLAFLLTWVAGDIF     50
+                      :  |  :| :||  |    :||:| |::   : |:|| ||  |  ||: 
+B_Sequence         1 NEALSGVWGSVSLAAWIFLLVPQLIENYQQGHADGISLTFLFIWAIGDVC     50
+
+A_Sequence        51 NLVGCLLEPATLPTQYYTAVLYTTSTVVLVLQGLYYDHVYRWCRCRKTKD    100
+                     |||| |     :||    |: :  :  :|:|| |||:   |  | :|   
+B_Sequence        51 NLVGALW-AGLVPTVIALAIYFCFADTILILQCLYYNS--RKSRAQKETS     97
+
+A_Sequence       101 NQQV----DDDQDPLKPKSADRSGISIPKASPRATPRRDFYYMSARSLAG    146
+                        :      :| ||     ::      : | | |   :        | |
+B_Sequence        98 GGVIASTGASEQSPLLQGDTNKHA---ARPSRRLTDVTE----ENMGLPG    140
+
+A_Sequence       147 SNTPPFRSYLRAAKSGPSAVGLDNESSSDDEAAAPVSVSNTVSQPRPIPR    196
+                     |         |   |  |:   |:  |       |    :||     |  
+B_Sequence       141 S---------RRRSSAFSSRRHDHNDSLSRVLEEPTKTHSTVKNTVSI--    179
+
+A_Sequence       197 SAGYGTFLATSLNLPLQSKALTQAYIGYTG--RRLLHEG-GGTDHSAFG-    242
+                           ||  ::       |   |    ||  |     | || ||:  | 
+B_Sequence       180 ------FLVMAVG------AAGWAIAWKTGAWRPSTVSGDGGDDHTPIGA    217
+
+A_Sequence       243 QWLGWLMAAIYMGGRIPQIWLNIKRGSVEGLNPLMFVFALVANLTYVLSI    292
+                     : ||:  |  |:| |||||  | :  | :||: | |: :|: ||||   |
+B_Sequence       218 EILGYASAVCYLGARIPQIIKNQREKSCDGLSLLFFLLSLLGNLTYGAGI    267
+
+A_Sequence       293 VARTTEWDSIKPNMPWLLDAAVCVALDFFIILQYIYYRYFLEKRVD    338
+                     :  : |   |  |:|||: :   :| |  | :|   :  | ||: |
+B_Sequence       268 LFHSVEKQYIITNLPWLIGSLGTMAEDAIIFIQ---FHAFGEKKQD    310
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	11.18 +/- 5.95
+Standard score (Z):	45.0
+Precise score (Z):	44.638
+Shuffles:	1000

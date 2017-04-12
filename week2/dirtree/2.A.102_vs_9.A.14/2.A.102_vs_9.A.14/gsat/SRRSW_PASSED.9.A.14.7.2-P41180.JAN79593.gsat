@@ -1,0 +1,102 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 923
+# Identity:     279/923 (30.2%)
+# Similarity:   458/923 (49.6%)
+# Gaps:         102/923 (11.1%)
+# Score: 1004.0
+# 
+#
+#=======================================
+
+A_Sequence         1 LALTWHTSAYGPDQRAQKK-----------GDIILGGLFPIHFGVAAKDQ     39
+                     |  |:   | |  || |::           |||: |||||:|  :   | 
+B_Sequence         1 LTFTFQQQAAG-HQRPQRESEYAHHLIRIPGDIVFGGLFPMHEHLVLSDH     49
+
+A_Sequence        40 ---D-LKSRPESVECIRYNF--------RGFRWLQAMIFAIEEINSSPAL     77
+                        |   :   :   |   |        :| : |:||::|:: ||  | :
+B_Sequence        50 AATDGASASGGAAGSIGMEFPCGAIKEEKGIQRLEAMLYALDLINDDPHI     99
+
+A_Sequence        78 LPNLTLGYRIFDTCNTVSKALEATLSFVA--QNKIDSLNLDEFCNCSEHI    125
+                     |||:|:|  | |||:: : ||: :: ||    ||  |    |  :   ::
+B_Sequence       100 LPNITIGAVILDTCSSDTHALDQSMEFVRSYMNKDASEYQCESGDAPRYV    149
+
+A_Sequence       126 P--STIAVVGATGSGVSTAVANLLGLFYIPQVSYASSSRLLSNKNQFKSF    173
+                     |      |:||: |  |  |||:| || |||:||||:|  ||:|::|: |
+B_Sequence       150 PHKPITGVIGASFSTESIMVANILRLFKIPQISYASTSAELSDKSRFEYF    199
+
+A_Sequence       174 LRTIPNDEHQATAMADIIEYFRWNWVGTIAADDDYGRPGIEKFREEAEER    223
+                      | :| |  || |: :::    | :| |:| : |||  ||  |   ||  
+B_Sequence       200 SRVVPPDNFQAQALVEMVRQLGWKYVSTVAVEGDYGEKGIASFVTLAESA    249
+
+A_Sequence       224 DICIDFSELISQYSDEEEIQHVVE-VIQNSTAKVIVVFSSGPDLEPLIKE    272
+                      |||  || | : ::: :   ::| : | |:|: :|:|:   :   ::  
+B_Sequence       250 GICIAVSEKILRRAEDADYDRIIERLSQKSSARGVVMFADEDETRRMLAA    299
+
+A_Sequence       273 IVRRNITGK-IWLASEAWASSSLIAMPQYFHVVGGTIGFALKAGQIPGFR    321
+                      :| | ||: :|: |::| :       | |    | |    |   : || 
+B_Sequence       300 TMRLNKTGQFLWVGSDSWGAKLHPVRDQEF-AAEGAITILPKRSSLAGFD    348
+
+A_Sequence       322 EFLKKVHPRK-----SV-----HNG---------FAKEFWEETFNCHLQE    352
+                      : | : |:      ||     |:|          |  | |  :  :  :
+B_Sequence       349 TYFKALRPKTAKVCGSVGGLANHSGGGLAAGAAANASGFGENQYYRNAVK    398
+
+A_Sequence       353 GAKGPLPVDTFLRGHEES--GDRFSNSSTAFR--PLCTGDENISSVETPY    398
+                     |::     : : |   |     ||: |::     | | | : ::     |
+B_Sequence       399 GSRIYNCRNPWFRQFWEQHFKCRFNTSASGGTNLPECKGGDKLT-----Y    443
+
+A_Sequence       399 IDYTHLRISYNVYLAVYSIAHALQD--IYTCLP-GRGLFTNGSCADIKKV    445
+                      :   | : : |  |||::|||:    |  | |  | |     | ::|  
+B_Sequence       444 YEQEGL-VPF-VVDAVYAMAHAVHRMIIDVCGPDAREL-----CDELKPA    486
+
+A_Sequence       446 EAWQ-VLKHLRHLNFTNNMGEQVTFDECGDLVGNYSIINW--HLSPEDGS    492
+                      : : :||::|::||    |: | |:: ||  |:||   :  | |  |  
+B_Sequence       487 PSGRNLLKYIRNVNFIGPQGQPVRFNKDGDAYGSYSFYQYQRHGSKYD--    534
+
+A_Sequence       493 IVFKEVGYYNVYAKKGERLFINEEKILW-SGFSREVPFSNCSRDCLAGTR    541
+                       :  :| ::        | :|   : | :  :  :| | ||  |  |  
+B_Sequence       535 --YVRIGDWSA------SLVLNMSMLAWPNSTTGTIPRSICSDSCPNGYI    576
+
+A_Sequence       542 KGIIEGEPTCCFECVECPDGEYS-DETDASACNKCPDDFWSNENHTSCIA    590
+                     :     :  ||: || | :  || ::|    |  |   :  | :|  |  
+B_Sequence       577 RNF---QDQCCWSCVSCREDSYSFNDT----CVACAPGYAPNRDHNGCDK    619
+
+A_Sequence       591 KEIEFLSWTEPFGIALTLFAVLGIFLTAFVLGVFIKFRNTPIVKATNREL    640
+                        | |:|  |: |   :|  ||:  | | | ||::: :||:: |: |||
+B_Sequence       620 IPAEHLTWDSPWAIVPLVFTALGVTATLFTLTVFLRYNSTPMIMASGREL    669
+
+A_Sequence       641 SYLLLFSLLCCFSSSLFFIGEPQDWTCRLRQPAFGISFVLCISCILVKTN    690
+                      ||||  :| |:  ::  : :|  :|| : :   | :  || | || |||
+B_Sequence       670 CYLLLTGILLCYLMAIPILAKPNMFTCSVLRVGLGFALCLCYSSILTKTN    719
+
+A_Sequence       691 RVLLVFEAKIPTSFHRKWWGLNLQFLLVFLCTFMQIVI--CVIWLYTAPP    738
+                     |:  :|         |  :  : :  :|  |    : :   ::||    |
+B_Sequence       720 RISRIFNRGSKAGIKRPSY-TSPKSQIVICCGLASVQLGGSLVWLMFERP    768
+
+A_Sequence       739 SSYRNQELEDEIIFITCHEGSL-MALGFLIGYTCLLAAICFFFAFKSRKL    787
+                     :: :    :     :||   :| : |  |  |  ||  :| |:|||:||:
+B_Sequence       769 AT-KEVHPQPLTAVLTCGVSNLSLVLSLL--YNMLLIILCTFYAFKTRKI    815
+
+A_Sequence       788 PENFNEAKFITFSMLIFFIVWISFIPAYASTYG--KFVSAVEVIAI-LAA    834
+                     ||||||||:| |:|    |||::|:  |  ||   |  :|   : : ::|
+B_Sequence       816 PENFNEAKYIGFTMYSTCIVWLAFVAIYFGTYNDYKIQTATLCVCVNISA    865
+
+A_Sequence       835 SFGLLACIFFNKIYIILFKPSRN    857
+                     |   | |:|  |:||:||:| :|
+B_Sequence       866 SVA-LGCLFVPKVYIVLFQPYKN    887
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	11.19 +/- 5.86
+Standard score (Z):	169.0
+Precise score (Z):	169.324
+Shuffles:	1000

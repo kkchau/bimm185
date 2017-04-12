@@ -1,0 +1,62 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 411
+# Identity:     124/411 (30.2%)
+# Similarity:   232/411 (56.4%)
+# Gaps:          17/411 ( 4.1%)
+# Score: 543.0
+# 
+#
+#=======================================
+
+A_Sequence         1 RARYLSYLTVDDITDMIGELEREFQLVVLNKVGKTKATLAMNKMDNDDLA     50
+                     |   || | :|   ::  : | |    :|  :    |   :: |  |  |
+B_Sequence         1 RVTILSLLPLDYAIELFDKPELEKPAAILELLPVNLAVEILDGMSADAAA     50
+
+A_Sequence        51 QLLEEMDEELKEQLLSSMEASESKAVQLLMNYPADSAGRMMTNRYVWIPQ    100
+                      : :|:|:  : :| : ::      :: | :||  :|| :||  :: :| 
+B_Sequence        51 DVFQEIDKATRTRLYALLKPLTRTELKKLTSYPDHTAGALMTTEFIAVPA    100
+
+A_Sequence       101 HYTVKDAVVKLKSFAEIAESINYLYVIN-ESKQLVGVLSYRDLILGEPEE    149
+                     ::|||  :  ::      |::   |||: ::  |:  :| |:|||  |::
+B_Sequence       101 NWTVKKTLDHIRDVERTRETVYTSYVIDPKTSTLLKAVSLRNLILASPDD    150
+
+A_Sequence       150 KVQDL-MFTRVISADALQDQEEVARLIERYDFLAIPVVEENNVLVGIVTV    198
+                     |: ::      |:       |::||| :|:| |::||::::| ::|||||
+B_Sequence       151 KILNVSTHDTPITISPFTHHEDIARLFQRHDLLSVPVIDDSNHVIGIVTV    200
+
+A_Sequence       199 DDIIDVVIREADEDYEKFAA-SGKDITF-DTKAYVAAYRRLPWLILLLFI    246
+                     ||::| :: | :||  ||      |  :     :    :|  ||  |||:
+B_Sequence       201 DDVLDSMVDEMNEDAYKFGGLEALDKPYMQINFFGMMKKRGGWL-ALLFM    249
+
+A_Sequence       247 G-LISGSIISYFEDALKQVVALAFFMPMVSGMTGNTGTQSLAVVIRGLSK    295
+                     | ::: | : |||  |::|:||  |:|::    ||:|:|: :::|| |: 
+B_Sequence       250 GEMLTASAMQYFETELEKVIALTLFIPLIMSSGGNSGSQATSLIIRALAL    299
+
+A_Sequence       296 EEMNKKTIVRLIFREFRTSIFIGAVCSVLIAIVSI-IWQ--GNALLG---    339
+                      |:  |   ::| ||  | | :| :  : | |  | :||  |    |   
+B_Sequence       300 RELTLKDWWKVIIREIPTGISLGILLGI-IGITRIAVWQQLGIYNYGEYW    348
+
+A_Sequence       340 FVVASSLFLTLI----IGTMSGTIIPIILHKLKVDPAIASGPLITTLNDI    385
+                     | :| ::   |:     |:::|:::| || :|: ||| || | : || |:
+B_Sequence       349 FFIAITVGAALVGIVTFGSLAGSMLPFILKRLQFDPASASAPFVATLVDV    398
+
+A_Sequence       386 LSLLIYFGIAT    396
+                     : ::||| :|:
+B_Sequence       399 MGIIIYFSVAS    409
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	22.53 +/- 8.74
+Standard score (Z):	60.0
+Precise score (Z):	59.526
+Shuffles:	1000

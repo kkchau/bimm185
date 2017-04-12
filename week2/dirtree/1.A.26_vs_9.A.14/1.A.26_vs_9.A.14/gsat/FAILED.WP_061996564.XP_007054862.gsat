@@ -1,0 +1,50 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 260
+# Identity:      52/260 (20.0%)
+# Similarity:   110/260 (42.3%)
+# Gaps:          28/260 (10.8%)
+# Score: 99.0
+# 
+#
+#=======================================
+
+A_Sequence         1 KLQGVLSIRQLILNDDYTQIEDIMKSNVIYC---NTLEDQEDVADKFKKY     47
+                     || |   :: || :::: ::: |       |    | |    :: :: | 
+B_Sequence         1 KLTGNHDLQSLISSENFPELKIIEMPYAYQCCAFGTCESHYKISSQWNKD     50
+
+A_Sequence        48 DFTAMPVVDNEKRLVGIITIDDIVD----IIEQENTEDIQKMAAMEPSEE     93
+                     : ::    |  |:  |:: | |  |    ::: |    :  :    ||  
+B_Sequence        51 ENSSAD--DFHKKDSGMLHIQDEHDFEDFLLDFEEDLKVHHLVQCSPSPG     98
+
+A_Sequence        94 EYLETG-VFKLAKNRI-IWLLI---LMISATFTGAIIQK--YDDVLQSVV    136
+                      :     :|     || :| ::    : :|  |  : :   |   :: ::
+B_Sequence        99 PFKPCDHLFGSWLIRIGVWTIVGLAFICNALLTATVFRSPLYISSIKLLI    148
+
+A_Sequence       137 ILAAFIPMLMDTGGNAGSQSSTLIIRGLA-LGQ-IEMG------DVLKVI    178
+                      | | : |||       :    |     |  |   | |       :| : 
+B_Sequence       149 GLIAIVNMLMGLSSGVLASMDALTFGSFAQYGAWWESGVGCQVTGLLSIF    198
+
+A_Sequence       179 WKEIRVSLIVGVILSIVNFFRIYYLQKVELAIS-ATVSITLFFTIVIAKV    227
+                       |  : |:   : ::   | : |  | |   | |:| | :||  ::| :
+B_Sequence       199 ASETSIFLL--TLAALERGFSVKYATKFETKSSLASVKIAIFFCFILALI    246
+
+A_Sequence       228 VGCVLPIVAK    237
+                     :  |:|::::
+B_Sequence       247 I-AVVPLLSE    255
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	14.01 +/- 6.86
+Standard score (Z):	12.0
+Precise score (Z):	12.391
+Shuffles:	1000

@@ -1,0 +1,54 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 321
+# Identity:      80/321 (24.9%)
+# Similarity:   142/321 (44.2%)
+# Gaps:          31/321 ( 9.7%)
+# Score: 221.0
+# 
+#
+#=======================================
+
+A_Sequence         1 IGYGLSLATLLVATAILSLFRKLHCTRNYIHMHLFISFILRAAAVFIKDL     50
+                     :|  :||  | ::      || |   || || :| ::       :|| :|
+B_Sequence         1 MGIAVSLVCLAISLFTFCFFRGLQSDRNTIHKNLCLN-------LFIGEL     43
+
+A_Sequence        51 ALFDSGESDQCSEGSVGCKAAMVFFQYCVMANFFWLLVEGLYLYTLLAVS    100
+                      ||  |     :|  : |        :| :| | |: :||: || :|   
+B_Sequence        44 -LFLVG--IHMTEPKLVCSIIAGVLHFCFLAAFTWMCLEGVQLYLMLVEV     90
+
+A_Sequence       101 F---FSERKYFWGYILIGWGVPSTFTMVWTIARIHFEDYG----CWDTIN    143
+                     |   || |||   | | |: ||:   :|   | | :  ||    ||  ::
+B_Sequence        91 FESEFSRRKY---YYLSGYLVPA--VVVGISAAIDYRSYGTQRACWLRVD    135
+
+A_Sequence       144 SSLWWIIKGPILTSILVNFILFICIIRILLQKLRPPDIRKSDSSPYSRLA    193
+                     :   |   ||:   |:|| ::|: :   : : ::     | ||:    : 
+B_Sequence       136 NHFIWSFIGPVTFIIVVN-VIFLVV--TMYKMVKHSTSMKPDSTRLGGI-    181
+
+A_Sequence       194 RSTLL----LIPLFGVHYIMFAFFPDNFKPEVKMVFELVVGSFQGFVVAI    239
+                     || :|    |: | |: :    || :     :  :|  :  : ||  : |
+B_Sequence       182 RSWVLGAFALLCLLGLTWSFGLFFLNESSIVMAYLF-TIFNTLQGMFIFI    230
+
+A_Sequence       240 LYCFLNGEVQAELRRKWRRWHLQGVLGWNPKYRHPSGGSNGATCSTQVSM    289
+                      :| |  :|: |  : : :    | |     :      :: :|     : 
+B_Sequence       231 FHCLLQKKVRKEYSKCFHQSQCCGALPSESSHSSAKAATSRSTARYSSAT    280
+
+A_Sequence       290 LTRVSPGARRSSSFQAEVSLV    310
+                      :|:      :   |:| | :
+B_Sequence       281 QSRIRRMWNDTVRKQSESSFI    301
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	18.09 +/- 7.78
+Standard score (Z):	26.0
+Precise score (Z):	26.085
+Shuffles:	1000

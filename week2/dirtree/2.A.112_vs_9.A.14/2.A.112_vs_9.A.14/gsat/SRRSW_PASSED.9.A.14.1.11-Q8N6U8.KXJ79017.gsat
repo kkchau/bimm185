@@ -1,0 +1,58 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 361
+# Identity:      93/361 (25.8%)
+# Similarity:   160/361 (44.3%)
+# Gaps:          52/361 (14.4%)
+# Score: 217.0
+# 
+#
+#=======================================
+
+A_Sequence         1 FIAIIVITIFVCLGNLVIVVTLYKKSYLLTLSNKFVFSLTLSNFLLSVLV     50
+                     : :| :: ||   ||:::   :::   : :::| |: :| ||: || || 
+B_Sequence         1 YSSIFILGIF---GNVLVCYVVFRNKAMQSVTNLFITNLALSDILLCVLA     47
+
+A_Sequence        51 LPFVVTSSIRREWIFGVVWCNFSALLYLLISSASMLTLGVIAIDRYYAVL    100
+                     :||  : :    |||| | |:   |        | |||  |||||:: ::
+B_Sequence        48 VPFTPSYTFFGRWIFGKVICHTVPLAQGCSVYISTLTLTSIAIDRFFVII     97
+
+A_Sequence       101 YPMVYP-MKITGNRAVMALVYIWLHSLIGCLP-PLF--------GWSSVE    140
+                     ||  :| ||:  :  :  :| ||: |::  ||  |:        |  : |
+B_Sequence        98 YPF-HPRMKL--STCITIIVLIWIFSMLVTLPYGLYMSHHDDTNGTLANE    144
+
+A_Sequence       141 -FDEFK-WMCVAAWHRE--PGYTAFWQIWCALFPFLVMLVCYGFIFRVAR    186
+                        | : : |   |  :    ::    |   : ||::| :||  |     
+B_Sequence       145 TLPENRTFYCEELWPEDMRKVFSIATSILQFVLPFIIMAICY--I-----    187
+
+A_Sequence       187 VKARKVHCGTVVIVEEDAQRTGRKNSSTSTSSSGSRRNAFQGVVYSANQC    236
+                            |  | |   |  ||  |  | :|    : |:  :      |  
+B_Sequence       188 -------C--VSIKLNDRART--KPGSKTTRREEAERDRKK----RTN--    220
+
+A_Sequence       237 KALITILVVLGAFMVTWGPYMVVIASEALWGKSSVSP--SLETWATWLSF    284
+                     : || :: : |   ::| |  :|  |   : : :  |  :|  :   |  
+B_Sequence       221 RMLIAMVAIFG---ISWLPLNLVNMSNDFYSELNDWPYYNLLFFIAHLIA    267
+
+A_Sequence       285 ASAVCH-PLIYGLWNKTVRKELLGM--CFGDRYYREPFVQRQRTSRLFSI    331
+                      |: |: | :|   |   |||   :  ||     |     |:   |  : 
+B_Sequence       268 MSSTCYNPFLYAWLNDNFRKEFKQVLPCFNPSRGRSTVSTRRSEHRTCNG    317
+
+A_Sequence       332 SNRITDLGLSP    342
+                     :|      | |
+B_Sequence       318 NNDTVQETLIP    328
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	17.99 +/- 7.75
+Standard score (Z):	26.0
+Precise score (Z):	25.663
+Shuffles:	1000

@@ -1,0 +1,58 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 390
+# Identity:     117/390 (30.0%)
+# Similarity:   195/390 (50.0%)
+# Gaps:          57/390 (14.6%)
+# Score: 404.0
+# 
+#
+#=======================================
+
+A_Sequence         1 WKVLLVMLLALITLATTLSNAFVIATVYRTRKLHTPANYLIASLAVTDLL     50
+                     |  ||::::  :|:     |  ||  |   :||    |: : |||| |:|
+B_Sequence         1 WPALLILVIIALTVG---GNILVILAVSLEKKLQNATNFFLRSLAVADML     47
+
+A_Sequence        51 VSILVMPISTMYTVTG-RWTLGQVVCDFWLSSDITCCTASILHLCVIALD     99
+                     | ||||||| :  :    | |   :|  |:  |:   ||||:||| |:||
+B_Sequence        48 VGILVMPISLINILYDYAWPLPSALCPIWIYLDVLFSTASIMHLCAISLD     97
+
+A_Sequence       100 RYWAITDAVEYSAKRTPKRAAVMIALVWVFSISISLP-PFFWRQAKAEEE    148
+                     || || : :|:|   :  :| : || ||  || :|:| |      : :  
+B_Sequence        98 RYVAIRNPIEHSRFNSRTKAMMKIAAVWTISIGVSMPIPVIGLHNEDKVF    147
+
+A_Sequence       149 VS-ECVVNTDHILYTVYSTVGAFYFPTLLLIALY----------GRIYV-    186
+                     |:  ||:| :  :  : | | ||: | ::::  |            ::: 
+B_Sequence       148 VNGSCVLNEERFM-LIGSFV-AFFIPLVIMVVTYCLTIQVLQRQATVFLY    195
+
+A_Sequence       187 EARS---------RILKQTP---------NR----TGKRL------TRAQ    208
+                     ||:|          |  | |         |       : |      :|  
+B_Sequence       196 EAKSSSQQPLSAPAITLQPPASPFHLPEINTLDPPDSQELKPPPLQSRRN    245
+
+A_Sequence       209 LITDSPGSTSSV---TSINSRVPDVP-SESGSPVYVNQVKVRVSDA--LL    252
+                      ::   |   |:    | :  :  :| ||: | :    :    |||    
+B_Sequence       246 TLSCLKGPEPSILLSASTSDSLSIIPSSEAASQLSSPAMGPGRSDASGCH    295
+
+A_Sequence       253 EKKKLMAA--RERKATKTLGIILGAFIVCWLPFFIISLVMPICKDACWFH    300
+                      :: :| |   ||:|:| |||:   |:: | |||| ::   :|: :|   
+B_Sequence       296 GRRGMMQAIKNERRASKVLGIVFFLFLIMWCPFFITNVTFVLCRGSCNES    345
+
+A_Sequence       301 LA--IFDFFTWLGYLNSLINPIIYTMSNEDFKQAFHKLIR    338
+                     |   : : | |:||::| :||::||: |: :::||   ||
+B_Sequence       346 LLHDLLNVFVWVGYISSGVNPLVYTLFNKTYRRAFSNYIR    385
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	17.21 +/- 7.39
+Standard score (Z):	52.0
+Precise score (Z):	52.344
+Shuffles:	1000

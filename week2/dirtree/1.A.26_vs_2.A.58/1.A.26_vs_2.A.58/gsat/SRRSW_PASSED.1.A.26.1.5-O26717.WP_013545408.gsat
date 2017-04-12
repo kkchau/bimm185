@@ -1,0 +1,54 @@
+
+#
+# Aligned_sequences: 2
+# 1: A_Sequence
+# 2: B_Sequence
+# Matrix: EBLOSUM62
+# Gap_penalty: 8.0
+# Extend_penalty: 2.0
+#
+# Length: 319
+# Identity:      89/319 (27.9%)
+# Similarity:   154/319 (48.3%)
+# Gaps:          31/319 ( 9.7%)
+# Score: 255.0
+# 
+#
+#=======================================
+
+A_Sequence         1 GMSSQDALEMIRRKMGEYDTIDYVYILD--SDTLAGVVSIREIL---SHD     45
+                       : :  |: ||      :|:   |::|  : ||   ||:| ::     |
+B_Sequence         1 NWTVKKTLDHIRDVERTRETVYTSYVIDPKTSTLLKAVSLRNLILASPDD     50
+
+A_Sequence        46 EILGDFMHRDIICFTPEDDPFDIPYLALSHGIKAIPVVDSGGRFRGVVPY     95
+                     :||    |   |  :|     ||  |   | : ::||:|      |:|  
+B_Sequence        51 KILNVSTHDTPITISPFTHHEDIARLFQRHDLLSVPVIDDSNHVIGIVTV    100
+
+A_Sequence        96 DEIIRILKVEADRNMLHFGGVFHRVVDE---KRSPGSMVKSRVPWLIIGV    142
+                     |:::  :  | : :   |||:    :|:   : :   |:| |  || :  
+B_Sequence       101 DDVLDSMVDEMNEDAYKFGGL--EALDKPYMQINFFGMMKKRGGWLALLF    148
+
+A_Sequence       143 VGGTVTASMIGRFEDLLSGFIALASFIPVMVYMSDAVGTQSEALIIREIA    192
+                     :|  :||| :  ||  |   |||  |||:::      |:|: :|||| :|
+B_Sequence       149 MGEMLTASAMQYFETELEKVIALTLFIPLIMSSGGNSGSQATSLIIRALA    198
+
+A_Sequence       193 V-DPSM-NHLKYIKGEFLVAAAIGALSSAFAGLMAGVTRMN--PLLGLIV    238
+                     : : :: :  | |  |     ::| |     |:: |:||:     ||:  
+B_Sequence       199 LRELTLKDWWKVIIREIPTGISLGIL----LGII-GITRIAVWQQLGIYN    243
+
+A_Sequence       239 FVSMFFSI---IAAVLISTVS---------PLLFRRMGYDPAVATGPLAT    276
+                     :   :| |   : | |:  |:         | : :|: :||| |: |   
+B_Sequence       244 YGEYWFFIAITVGAALVGIVTFGSLAGSMLPFILKRLQFDPASASAPFVA    293
+
+A_Sequence       277 ILSDFTTTLIYLSVASSLL    295
+                      | |    :|| |||| :|
+B_Sequence       294 TLVDVMGIIIYFSVASFVL    312
+
+
+#---------------------------------------
+
+============ FINISHED =============
+Average Quality (AQ)	20.92 +/- 8.23
+Standard score (Z):	28.0
+Precise score (Z):	28.452
+Shuffles:	1000
