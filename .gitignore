@@ -7,3 +7,6 @@
 *.clm
 *.tbl
 *.gsat
+
+# directory
+dirtree/
