@@ -11,3 +11,7 @@ Code and Outputs
     Read sequence file for E. Coli, then create fasta file using protein table and sequence: e_coli.faa
 ##### extract_sequence_2.py
     See above: e_coli.out (b-number\tsequence)
+##### codon_dist.py
+    Create a table with codon frequencies for the e_coli genes: eColi_codon_table.out
+##### cui_calculation.py
+    Calculate CUI for each gene: e_coli_cui.out
