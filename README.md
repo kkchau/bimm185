@@ -7,5 +7,7 @@ Code and Outputs
     From file RS.txt.bz2, extract the most significant interactions of the first 2000 proteins and return the highest number of interactions: script1.out
 
 ### Week 2
-##### extract_sequency.py
+##### extract_sequence.py
     Read sequence file for E. Coli, then create fasta file using protein table and sequence: e_coli.faa
+##### extract_sequence_2.py
+    See above: e_coli.out (b-number\tsequence)
