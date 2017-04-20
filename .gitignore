@@ -7,7 +7,12 @@
 *.clm
 *.tbl
 *.gsat
+*.cfg
 
 # directory
 dirtree/
 all_genomes/
+bin/
+include/
+lib/
+lib64/
