@@ -3,7 +3,7 @@
 # This shell script will create a python-3.4.2-64 virtual environment along with biopython in the specified directory
 # For use on UCSD ieng6 server ONLY (the server contains the python-342-64 module)
 # SPACE REQUIRED: at least 24MB
-# Put this shell script into your bm185s directory;
+# Put this shell script into your bm185s directory (/home/linux/ieng6/bm185s/<username>);
 # chmod +x bimm185env.sh to make this shell script executable
 # ./bimm185env.sh to run
 
