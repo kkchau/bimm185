@@ -8,6 +8,7 @@
 *.tbl
 *.gsat
 *.cfg
+*.json
 
 # directory
 dirtree/
