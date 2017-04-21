@@ -36,9 +36,10 @@ python3 -m venv $1
 echo 'Activating virtual environment'
 source $1/bin/activate
 
-# cd and install biopython
-echo 'Installing biopython'
+# use appropriate gcc compiler since ieng6 is weird
 export CC=/usr/bin/gcc
+
+# install biopython
 pip install biopython
 
 # echo directions
