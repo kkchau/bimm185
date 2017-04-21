@@ -18,9 +18,9 @@ if [ -z $1 ]; then
 fi
 
 if [ -d $1 ]; then
-    echo $usage
-    echo $caution
-    echo 'ERROR: Directory already exists!!'
+    echo $usage >&2
+    echo $caution >&2
+    echo 'ERROR: Directory already exists!!' >&2
     exit
 fi
 
