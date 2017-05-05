@@ -1,0 +1,1 @@
+zcat ../../week4/genomes/e_coli/GCF_000005845.2_ASM584v2_protein.faa.gz | blastp -query - -out ../g1vg1_blast.out -db ecoli_blastdb -evalue 0.01 -outfmt "6 qseqid sseqid qlen slen bitscore evalue pident nident length qcovs qstart qend sstart send"
