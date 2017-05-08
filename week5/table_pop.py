@@ -37,6 +37,9 @@ def sqlInsert(sql_connection, table, col_list, values):
 
 
 def populate_tables(filename, connection):
+    """
+        Insert relevant information to SQL tables
+    """
     with gzip.open(filename, 'rt') as gbff:
 
         global genome_id
