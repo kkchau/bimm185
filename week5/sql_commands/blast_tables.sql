@@ -9,7 +9,7 @@ CREATE TABLE blast_gid1 (
     sseqid VARCHAR(25) NOT NULL,
     qlen INT(10) UNSIGNED NOT NULL,
     slen INT(10) UNSIGNED NOT NULL,
-    bitscore DOUBLE PRECISION NOT NULL, 
+    bitscore DOUBLE PRECISION NOT NULL,
     evalue DOUBLE PRECISION NOT NULL,
     pident DOUBLE PRECISION NOT NULL,
     nident INT(10) NOT NULL,
@@ -19,7 +19,8 @@ CREATE TABLE blast_gid1 (
     qend BIGINT(15) NOT NULL,
     sstart BIGINT(15) NOT NULL,
     send BIGINT(15) NOT NULL,
-    PRIMARY KEY (qseqid),
+    scov DOUBLE PRECISION UNSIGNED NOT NULL,
+    KEY (qseqid),
     KEY (sseqid)
 ) ENGINE=InnoDB;
 
@@ -28,7 +29,7 @@ CREATE TABLE blast_gid2 (
     sseqid VARCHAR(25) NOT NULL,
     qlen INT(10) UNSIGNED NOT NULL,
     slen INT(10) UNSIGNED NOT NULL,
-    bitscore DOUBLE PRECISION NOT NULL, 
+    bitscore DOUBLE PRECISION NOT NULL,
     evalue DOUBLE PRECISION NOT NULL,
     pident DOUBLE PRECISION NOT NULL,
     nident INT(10) NOT NULL,
@@ -38,6 +39,7 @@ CREATE TABLE blast_gid2 (
     qend BIGINT(15) NOT NULL,
     sstart BIGINT(15) NOT NULL,
     send BIGINT(15) NOT NULL,
-    PRIMARY KEY (qseqid),
+    scov DOUBLE PRECISION UNSIGNED NOT NULL,
+    KEY (qseqid),
     KEY (sseqid)
 ) ENGINE=InnoDB;

@@ -37,22 +37,43 @@ sqlconnection = pymysql.connect(host='bm185s-mysql.ucsd.edu',
                                 db='kkchau_db',
                                 cursorclass=pymysql.cursors.DictCursor)
 
+# sql table field names
+fields = ['qseqid', 'sseqid', 'qlen', 'slen', 'bitscore', 'evalue', 'pident',
+          'nident', 'length', 'qcovs', 'qstart', 'qend', 'sstart', 'send',
+          'scov']
+
 # blast a_tumafaciens against e_coli
+print("blast 1")
 zcat = subprocess.Popen(['zcat', atuma_dir], stdout=subprocess.PIPE)
-subprocess.Popen(['blastp', '-query', '-', '-out', '../dummy_blast.out',
+subprocess.Popen(['blastp', '-query', '-', '-out', 'blast_scratch.out',
                   '-db', 'ecoli_blastdb', '-evalue', '0.01', '-outfmt',
                   "6 qseqid sseqid qlen slen bitscore evalue pident nident length qcovs qstart qend sstart send"],
                   stdin=zcat.stdout)
 zcat.wait()
 
+print("sql 1")
 # process blast output and export to database (blast_gid1)
+with open('blast_scratch.out', 'r') as scratch1:
+    for line in scratch1:
+        record = line.strip().split()
+        record.append(float(record[8]) / float(record[3]))              # scov
+        sqlInsert(sqlconnection, 'blast_gid1', fields, record)
 
+print("blast 2")
 # blast e_coli against a_tumafaciens
 zcat = subprocess.Popen(['zcat', ecoli_dir], stdout=subprocess.PIPE)
-subprocess.Popen(['blastp', '-query', '-', '-out', '../dummy_blast.out',
+subprocess.Popen(['blastp', '-query', '-', '-out', 'blast_scratch.out',
                   '-db', 'atuma_blastdb', '-evalue', '0.01', '-outfmt',
                   "6 qseqid sseqid qlen slen bitscore evalue pident nident length qcovs qstart qend sstart send"],
                   stdin=zcat.stdout)
 zcat.wait()
 
+print("sql 2")
 # process blast output and export to database (blast_gid2)
+with open('blast_scratch.out', 'r') as scratch1:
+    for line in scratch1:
+        record = line.strip().split()
+        record.append(float(record[8]) / float(record[3]))              # scov
+        sqlInsert(sqlconnection, 'blast_gid2', fields, record)
+
+sqlconnection.close()

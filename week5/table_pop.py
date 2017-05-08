@@ -6,8 +6,26 @@ from pymysql import cursors
 from Bio import SeqIO as sio
 
 
-# define mysql functions so I don't have to type everything out all of the time
+# global variables
+genome_table_col = ['genome_id', 'name', 'tax_id', 'domain', 'num_replicons', 'num_genes', 'size_bp', 'assembly']
+rep_table_col = ['replicon_id', 'genome_id', 'name', 'type', 'shape', 'num_genes', 'size_bp', 'accession', 'release_date']
+gene_table_col = ['gene_id', 'genome_id', 'replicon_id', 'locus_tag', 'protein_id', 'name', 'strand', 'num_exons', 'length', 'product']
+ex_ref_table_col = ['gene_id', 'xdb', 'xid']
+exons = ['gene_id', 'exon', 'l_position', 'r_position', 'length']
+syn = ['gene_id', 'synonym']
+functions = ['gene_id', 'function']
+
+genome_id = 0
+replicon_id = 0
+gene_id = 0
+exon_id = 0
+
+
 def sqlInsert(sql_connection, table, col_list, values):
+    """
+        Execute INSERT command to the given SQL connection.
+    """
+
     with sql_connection.cursor() as cursor:
         sub_set = ','.join(['%s' for _ in range(len(values))])
         command = "INSERT INTO " + table + "(" + ','.join(col_list) + ") VALUES (" + sub_set + ");"
@@ -18,41 +36,40 @@ def sqlInsert(sql_connection, table, col_list, values):
     return 0        # return code
 
 
-genome_table_col = ['genome_id', 'name', 'tax_id', 'domain', 'num_replicons', 'num_genes', 'size_bp', 'assembly']
-rep_table_col = ['replicon_id', 'genome_id', 'name', 'type', 'shape', 'num_genes', 'size_bp', 'accession', 'release_date']
-gene_table_col = ['gene_id', 'genome_id', 'replicon_id', 'locus_tag', 'protein_id', 'name', 'strand', 'num_exons', 'length', 'product']
-ex_ref_table_col = ['gene_id', 'xdb', 'xid']
-exons = ['gene_id', 'exon', 'l_position', 'r_position', 'length']
-syn = ['gene_id', 'synonym']
-functions = ['gene_id', 'function']
-
-
-def populate_tables(filename, gen_id, rep_id, gene_id, ex_id, assembly, connection):
+def populate_tables(filename, connection):
     with gzip.open(filename, 'rt') as gbff:
 
-        gen_id += 1
-        gene_counter = 0
-        num_rep = 0
-        tot_genes = 0
-        full_length = 0
+        global genome_id
+        global replicon_id
+        global gene_id
+        global exon_id
+
+        genome_id += 1                  # genome identifier increment
+        num_rep = 0                     # number of replicons for this genome
+        tot_genes = 0                   # total number of genes for this genome
+        full_length = 0                 # length of this genome
+        assembly = ''                   # assembly variable
 
         # iterate through all the records in the gb file (replicons)
         for record in sio.parse(gbff, 'genbank'):
 
-            rep_id += 1
-            num_rep += 1
-            rep_genes = 0
-            rep_size = 0
-            rep_type = 'plasmid' if 'plasmid' in record.description else 'chromosome'
+            replicon_id += 1            # increment replicon identifier
+            num_rep += 1                # increment number of replicons
+            rep_genes = 0               # counter for replicon genes
+            rep_size = 0                # size of replicon
 
             # record annotations are stored in dictionary format
             domain = record.annotations['taxonomy'][0]
             accession = ','.join(record.annotations['accessions'])
             release_date = record.annotations['date']
+            assembly = [str(ref.strip().split(':')[1]) for ref in record.dbxrefs
+                        if 'Assembly' in ref]
 
             # replicon information
-            rep_name = record.annotations['organism']
+            name = record.annotations['organism']
+            rep_name = record.description
             topology = record.annotations['topology']
+            rep_type = 'plasmid' if 'plasmid' in record.description else 'chromosome'
 
             # features (e.g. CDS)
             for feature in record.features:
@@ -61,37 +78,57 @@ def populate_tables(filename, gen_id, rep_id, gene_id, ex_id, assembly, connecti
                 if feature.type == 'source':
                     #print(feature)
                     tax_id = ','.join(feature.qualifiers.get('db_xref')).strip().split(':')[1]
-                    bp_size = re.findall("([0-9]+)", str(feature.location.end))[0]
-                    full_length += int(bp_size)
-                    rep_size = int(bp_size)
+                    rep_size = int(re.findall("([0-9]+)", str(feature.location.end))[0])
+                    full_length += rep_size
 
                 # gene information
                 elif feature.type == 'CDS':
-                    if feature.qualifiers.get('note'):
-                        if 'pseudo' in feature.qualifiers.get('note')[0]:
-                            continue
+
+                    # skip pseudogenes
                     if feature.qualifiers.get('pseudo') is not None:
                         continue
-                    rep_genes += 1
-                    gene_id += 1
+
+                    # skip incomplete genes
+                    if '<' in str(feature.location.start):
+                        continue
+                    if '>' in str(feature.location.end):
+                        continue
+
+                    # get strand
+                    strand = 'F' if feature.location.strand > 0 else 'R'
+
+                    # get gene start and end
+                    start = re.findall("([0-9]+)", str(feature.location.start))[0]
+                    end = re.findall("([0-9]+)", str(feature.location.end))[0]
+
+                    rep_genes += 1          # replicon gene counter
+                    gene_id += 1            # gene identifier
+
                     print(feature)
+
+                    # gene name if available
                     if feature.qualifiers.get('name'):
                         gene_name = feature.qualifiers.get('name')
                     else:
                         gene_name = feature.qualifiers.get('locus_tag')[0]
+
+                    # get locus tag
                     locus_tag = feature.qualifiers.get('locus_tag')[0]
-                    strand = 'F' if feature.location.strand > 0 else 'R'
-                    start = re.findall("([0-9]+)", str(feature.location.start))[0]
-                    end = re.findall("([0-9]+)", str(feature.location.end))[0]
                     g_length = int(end) - int(start)
                     product = feature.qualifiers.get('product')
+
+                    # protein_id
                     if feature.qualifiers.get('protein_id'):
                         protein_id = str(str(feature.qualifiers.get('protein_id')[0]).strip().split('.')[0])
+
+                        # protein_id is also an external reference
+                        sqlInsert(connection, 'gene_xrefs', ex_ref_table_col, [gene_id, 'refseq', protein_id])
+
                     else:
                         protein_id = '-'
 
                     # insert gene
-                    sqlInsert(connection, 'genes', gene_table_col, [gene_id, gen_id, rep_id, locus_tag, protein_id, gene_name, strand, 1, g_length, product])
+                    sqlInsert(connection, 'genes', gene_table_col, [gene_id, genome_id, replicon_id, locus_tag, protein_id, gene_name, strand, 1, g_length, product])
 
                     # external references
                     if feature.qualifiers.get('db_xref'):
@@ -101,29 +138,33 @@ def populate_tables(filename, gen_id, rep_id, gene_id, ex_id, assembly, connecti
                             sqlInsert(connection, 'gene_xrefs', ex_ref_table_col, [gene_id, db, ref])
 
                     # exon information
-                    ex_id += 1
-                    sqlInsert(connection, 'exons', exons, [gene_id, ex_id, start, end, g_length])
+                    for loc in feature.location.parts:
+                        exon_id += 1
+                        ex_start = int(loc.start)
+                        ex_end = int(loc.end)
+                        sqlInsert(connection, 'exons', exons, [gene_id, exon_id, ex_start, ex_end, ex_end - ex_start])
 
                     # synonyms
                     if feature.qualifiers.get('gene_synonym'):
                         for s in feature.qualifiers.get('gene_synonym'):
                             sqlInsert(connection, 'gene_synonyms', syn, [gene_id, s])
 
+                    # functions
                     if feature.qualifiers.get('function'):
                         for f in feature.qualifiers.get('function'):
                             sqlInsert(connection, 'functions', functions, [gene_id, f])
 
             # replicons table entry
-            rep_table_info = [rep_id, gen_id, record.description, rep_type, topology, rep_genes, rep_size, accession, release_date]
+            rep_table_info = [replicon_id, genome_id, record.description, rep_type, topology, rep_genes, rep_size, accession, release_date]
             sqlInsert(connection, 'replicons', rep_table_col, rep_table_info)
             tot_genes += rep_genes
 
-        genome_table_info = [gen_id, rep_name, tax_id, domain, num_rep, tot_genes, full_length, assembly]
+        genome_table_info = [genome_id, name, tax_id, domain, num_rep, tot_genes, full_length, assembly]
 
         # genomes table entry
         sqlInsert(connection, 'genomes', genome_table_col, genome_table_info)
 
-        return gen_id, rep_id, gene_id, ex_id
+        return 0
 
 
 if __name__ == '__main__':
@@ -141,11 +182,7 @@ if __name__ == '__main__':
     e_coli = '/home/linux/ieng6/bm185s/kkchau/bimm185/week4/genomes/e_coli/GCF_000005845.2_ASM584v2_genomic.gbff.gz'
     a_tuma = '/home/linux/ieng6/bm185s/kkchau/bimm185/week4/genomes/a_tumafaciens/GCF_000576515.1_ASM57651v1_genomic.gbff.gz'
 
-    gid = 0
-    rid = 0
-    geid = 0
-    eid = 0
-    gid, rid, geid, eid = populate_tables(e_coli, gid, rid, geid, eid, 'GCF_000005845.2', sqlconnection)
-    gid, rid, geid, eid = populate_tables(a_tuma, gid, rid, geid, eid, 'GCF_000576515.1', sqlconnection)
+    populate_tables(e_coli, sqlconnection)
+    populate_tables(a_tuma, sqlconnection)
 
     sqlconnection.close()
