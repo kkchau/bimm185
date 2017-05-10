@@ -9,6 +9,7 @@
 *.gsat
 *.cfg
 *.json
+*.swp
 
 # directory
 dirtree/
