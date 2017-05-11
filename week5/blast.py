@@ -52,12 +52,14 @@ subprocess.Popen(['blastp', '-query', '-', '-out', 'blast_scratch.out',
 zcat.wait()
 
 print("sql 1")
-# process blast output and export to database (blast_gid1)
+# process blast output and export to database (blast_gid2)
 with open('blast_scratch.out', 'r') as scratch1:
     for line in scratch1:
         record = line.strip().split()
+        record[0] = record[0].strip().split('.')[0]
+        record[1] = record[1].strip().split('.')[0]
         record.append(float(record[8]) / float(record[3]))              # scov
-        sqlInsert(sqlconnection, 'blast_gid1', fields, record)
+        sqlInsert(sqlconnection, 'blast_gid2', fields, record)
 
 print("blast 2")
 # blast e_coli against a_tumafaciens
@@ -69,11 +71,13 @@ subprocess.Popen(['blastp', '-query', '-', '-out', 'blast_scratch.out',
 zcat.wait()
 
 print("sql 2")
-# process blast output and export to database (blast_gid2)
+# process blast output and export to database (blast_gid1)
 with open('blast_scratch.out', 'r') as scratch1:
     for line in scratch1:
         record = line.strip().split()
+        record[0] = record[0].strip().split('.')[0]
+        record[1] = record[1].strip().split('.')[0]
         record.append(float(record[8]) / float(record[3]))              # scov
-        sqlInsert(sqlconnection, 'blast_gid2', fields, record)
+        sqlInsert(sqlconnection, 'blast_gid1', fields, record)
 
 sqlconnection.close()

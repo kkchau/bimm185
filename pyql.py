@@ -88,6 +88,8 @@ def sqlSelect(sql_connection, table, fields=None, where=None, limit=None):
             cursor.execute(command)
 
         all_rows = cursor.fetchall()
+        if not all_rows:
+            return fields, None
         all_fields = list(all_rows[0].keys())
 
         if fields:

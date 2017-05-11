@@ -110,8 +110,8 @@ def populate_tables(filename, connection):
                     print(feature)
 
                     # gene name if available
-                    if feature.qualifiers.get('name'):
-                        gene_name = feature.qualifiers.get('name')
+                    if feature.qualifiers.get('gene'):
+                        gene_name = feature.qualifiers.get('gene')
                     else:
                         gene_name = feature.qualifiers.get('locus_tag')[0]
 
