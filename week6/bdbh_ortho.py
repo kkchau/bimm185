@@ -33,7 +33,7 @@ for qseq1 in query_prot:
 # perform comparison from one direction to the other
 for query in first_direction:
     with connection.cursor() as cursor:
-        cursor.execute("SELECT sseqid FROM blast_gid1"
+        cursor.execute("SELECT sseqid,qcovs,scov FROM blast_gid1"
                        + " WHERE qseqid='{}' ".format(query)
                        + "ORDER BY bitscore DESC LIMIT 1;")
         second_dir_match = cursor.fetchone()
@@ -43,15 +43,21 @@ for query in first_direction:
             continue
         else:
             # formatting
-            second_dir_match = second_dir_match['sseqid'].strip().split('|')[1]
+            ortho = second_dir_match['sseqid'].strip().split('|')[1]
+
+            # at least 60% coverage
+            if float(second_dir_match['qcovs']) < 0.6:
+                continue
+            if float(second_dir_match['scov']) < 0.6:
+                continue
         
         # if bi-directional best hit, output
-        if first_direction[query] == second_dir_match:
+        if first_direction[query] == ortho:
             print("{}\t{}\t{}\t{}".format(query,
-                                          second_dir_match, 
+                                          ortho, 
                                           'orthology', 
                                           'BDBH'))
             sqlInsert(connection, 
                       'homology_1',
                       ['seqid_1', 'seqid_2', 'h_type', 'method'],
-                      [query, second_dir_match, 'orthology', 'BDBH'])
+                      [query, ortho, 'orthology', 'BDBH'])
