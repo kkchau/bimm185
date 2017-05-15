@@ -61,4 +61,13 @@ for line in operons_lines:
 
                     sqlconn.commit()
 
+# populate operons table just from TUSet.txt
+tu_lines = subprocess.check_output(["grep", "^[^#]", "./SampleFiles/TUSet.txt"]).splitlines()
+tu_lines = [line.decode('ascii').strip().split() for line in tu_line]
+
+for line in tu_lines:
+    
+    if 'Strong' not in line[-1] or 'Confirmed' not in line[-1]:
+        continue
+
 sqlconn.close()

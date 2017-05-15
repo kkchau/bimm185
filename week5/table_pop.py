@@ -149,7 +149,7 @@ def populate_tables(filename, connection):
 
                     # synonyms
                     if feature.qualifiers.get('gene_synonym'):
-                        for s in feature.qualifiers.get('gene_synonym'):
+                        for s in feature.qualifiers.get('gene_synonym')[0].strip().split(';'):
                             sqlInsert(connection, 'gene_synonyms', syn, [gene_id, s])
 
                     # functions
