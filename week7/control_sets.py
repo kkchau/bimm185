@@ -1,5 +1,12 @@
+import numpy as np
+import matplotlib
+matplotlib.use('AGG')
+import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy.stats import gaussian_kde
 import pymysql
 import getpass
+import math
 
 
 def pos_control(sqlcon):
@@ -35,9 +42,6 @@ def pos_control(sqlcon):
         lp_array = [coord[0] for coord in coordinates]      # left_pos
         rp_array = [coord[1] for coord in coordinates]      # right_pos
 
-        print(lp_array)
-        print(rp_array)
-
         # distances
         for ind in range(len(rp_array) - 1):
             distances.append(
@@ -62,37 +66,55 @@ def neg_control(sqlcon):
         "SELECT DISTINCT operon FROM operons ORDER BY l_pos;")
     operons = [[op[0]] for op in cur.fetchall()]
 
-    # get l_pos and strand
+    # get left-most gene and right-most gene and strand for each operon
     for i, operon in enumerate(operons):
-        cur.execute(
-            "SELECT l_pos,strand FROM operons"
-            + " WHERE operon='{}'".format(operon[0])
-            + " ORDER BY l_pos LIMIT 1;"
-        )
+        cur.execute("SELECT gene_id FROM operons"
+                    + " WHERE operon='{}' ORDER BY l_pos limit 1;".format(operon[0]))
+        
+        operons[i].append(cur.fetchone()[0])
 
-        # add l_pos, strand to operon in memory
+        cur.execute("SELECT gene_id,strand FROM operons"
+                    + " WHERE operon='{}' ORDER BY r_pos DESC limit 1;".format(operon[0]))
+
         operons[i].extend(list(cur.fetchone()))
 
-    # get right coordinate for each operon
-    for i, operon in enumerate(operons):
-        cur.execute(
-            "SELECT r_pos FROM operons WHERE operon='{}'".format(operon[0])
-            + " ORDER BY r_pos DESC LIMIT 1;"
-        )
+    # get distances between genes of disjoint operons
+    for operon in operons:
+        left_gene = operon[1]
+        right_gene = operon[2]
+        strand = operon[3]
+        b_strand = None
+        a_strand = None
 
-        # add r_pos to the operon in memory
-        operons[i].insert(2, cur.fetchone()[0])
+        # operon's left gene
+        cur.execute("SELECT l_position FROM exons WHERE gene_id='{}' LIMIT 1;".format(left_gene))
+        result = cur.fetchone()
+        if result:
+            left_left = result[0]
 
-    # calculate distances between operons
-    for op_ind in range(len(operons) - 1):
+        # operon's right gene
+        cur.execute("SELECT r_position FROM exons WHERE gene_id='{}' LIMIT 1;".format(right_gene))
+        result = cur.fetchone()
+        if result:
+            right_right = result[0]
 
-        # skip if not in the same strand
-        if operons[op_ind + 1][3] != operons[op_ind][3]:
-            continue
+        # gene before left gene
+        cur.execute("SELECT r_position,strand FROM exons JOIN genes USING (gene_id) WHERE r_position < {} ORDER BY r_position DESC LIMIT 1;".format(left_left))
+        result = cur.fetchone()
+        if result:
+            before_left,b_strand = result
 
-        distances.append(
-            operons[op_ind + 1][1] - operons[op_ind][2] + 1
-        )
+        # gene after right gene
+        cur.execute("SELECT l_position,strand FROM exons JOIN genes USING (gene_id) WHERE l_position > {} ORDER BY l_position ASC LIMIT 1;".format(right_right))
+        result = cur.fetchone()
+        if result:
+            after_right,a_strand = result
+
+        if b_strand == strand:
+            distances.append(int(left_left) - int(before_left))
+
+        if a_strand == strand:
+            distances.append(int(after_right) - int(right_right))
 
     return distances
 
@@ -110,11 +132,21 @@ def main():
     )
 
     pctr = pos_control(sql_connection)
-    print(pctr)
-
     nctr = neg_control(sql_connection)
-    print(nctr)
+    print(list(sorted(pctr)))
+    print(list(sorted(nctr)))
+    print(len(pctr))
+    print(len(nctr))
 
+    # create seaborn plots and save image
+    sns.set_style('whitegrid')
+    plt.xlim(-100, 500)
+    sns.kdeplot(np.array(pctr))
+    sns.kdeplot(np.array(nctr))
+    plt.savefig('ctr_graph.png')
+
+    density = gaussian_kde(pctr)
+    
 
 if __name__ == '__main__':
     main() 

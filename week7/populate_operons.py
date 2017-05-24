@@ -88,23 +88,25 @@ for operon in op_set:
             gene_id = s_result[0]
             strand = s_result[1]
 
-        if not left or not right or not strand:
-            operon_complete = False
+        # if there is insufficient information for this gene
+        # skip the entire operon
+        # if not left or not right or not strand:
+        #     operon_complete = False
 
-        else:
+        # else:
+        #     gene_info_set.append((gene_id, left, right, strand))
+        if not left or not right or not strand:
+            continue
+        else: 
             gene_info_set.append((gene_id, left, right, strand))
 
-    if not operon_complete:
-        continue
-
-    else:
-        for gene in gene_info_set:
-            print(operon[0], gene)
-            cur.execute(
-                "INSERT INTO operons VALUES (%s,%s,%s,%s,%s,%s);",
-                (gene[0],operon[0],operon[-1],gene[1],gene[2],gene[3])
-            )
-            sqlcon.commit()
+    for gene in gene_info_set:
+        print(operon[0], gene)
+        cur.execute(
+            "INSERT INTO operons VALUES (%s,%s,%s,%s,%s,%s);",
+            (gene[0],operon[0],operon[-1],gene[1],gene[2],gene[3])
+        )
+        sqlcon.commit()
 
 sqlcon.close()
 
