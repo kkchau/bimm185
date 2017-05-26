@@ -26,6 +26,11 @@ def posterior_prob(kdep, kden):
         Priors are given as h_1=0.6 and h_0=0.4
     """
 
+    kdep.covariance_factor = lambda: 0.2
+    kdep._compute_covariance()
+    kden.covariacne_factor = lambda: 0.2
+    kden._compute_covariance()
+
     def _probability(x):
         return ((kdep(x)*0.6) / ((kdep(x)*0.6) + (kden(x)*0.4)))
 
@@ -45,15 +50,21 @@ def main():
     n_kde = gaussian_kde(neg_control(sqlcon))
     post = posterior_prob(p_kde, n_kde)
     
-    """
     # graphing
-    x_samples = np.arange(-40, 300, 0.5)
+    x_samples = np.arange(-40, 300, 2)
+
+    p_array = p_kde(x_samples)
+    n_array = n_kde(x_samples)
+
+    max_p = max(p_array)
+
     plt.plot(x_samples, post(x_samples))
-    plt.plot(x_samples, p_kde(x_samples))
-    plt.plot(x_samples, n_kde(x_samples))
+    plt.plot(x_samples, [val / max_p for val in p_array])
+    plt.plot(x_samples, [val / max_p for val in n_array])
     plt.legend(['Posterior', 'Positive', 'Negative'])
     plt.savefig('overlap.png')
     plt.clf()
+    """
     plt.plot(x_samples, p_kde(x_samples))
     plt.title("Positive Control")
     plt.savefig("pctr.png")

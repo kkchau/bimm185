@@ -9,7 +9,7 @@ from Bio import SeqIO as sio
 # global variables
 genome_table_col = ['genome_id', 'name', 'tax_id', 'domain', 'num_replicons', 'num_genes', 'size_bp', 'assembly']
 rep_table_col = ['replicon_id', 'genome_id', 'name', 'type', 'shape', 'num_genes', 'size_bp', 'accession', 'release_date']
-gene_table_col = ['gene_id', 'genome_id', 'replicon_id', 'locus_tag', 'protein_id', 'name', 'strand', 'num_exons', 'length', 'product']
+gene_table_col = ['gene_id', 'genome_id', 'replicon_id', 'locus_tag', 'protein_id', 'name', 'strand', 'num_exons', 'length', 'product', 'start', 'end']
 ex_ref_table_col = ['gene_id', 'xdb', 'xid']
 exons = ['gene_id', 'exon', 'l_position', 'r_position', 'length']
 syn = ['gene_id', 'synonym']
@@ -131,7 +131,7 @@ def populate_tables(filename, connection):
                         protein_id = '-'
 
                     # insert gene
-                    sqlInsert(connection, 'genes', gene_table_col, [gene_id, genome_id, replicon_id, locus_tag, protein_id, gene_name, strand, 1, g_length, product])
+                    sqlInsert(connection, 'genes', gene_table_col, [gene_id, genome_id, replicon_id, locus_tag, protein_id, gene_name, strand, 1, g_length, product, start, end])
 
                     # external references
                     if feature.qualifiers.get('db_xref'):

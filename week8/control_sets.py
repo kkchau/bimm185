@@ -30,7 +30,7 @@ def pos_control(sqlcon):
 
         # all coordinates into arrays
         cur.execute(
-            "SELECT l_pos, r_pos FROM operons WHERE operon='{}'".format(op)
+            "SELECT l_pos,r_pos,gene_id FROM operons WHERE operon='{}'".format(op)
             + " ORDER BY l_pos;"
         )
         coordinates = cur.fetchall()
@@ -41,9 +41,16 @@ def pos_control(sqlcon):
 
         lp_array = [coord[0] for coord in coordinates]      # left_pos
         rp_array = [coord[1] for coord in coordinates]      # right_pos
+        gid_array = [coord[2] for coord in coordinates]     # gene_ids
 
         # distances
         for ind in range(len(rp_array) - 1):
+            distance = lp_array[ind + 1] - rp_array[ind] + 1
+            """
+            if distance > 200:
+                print(gid_array[ind], gid_array[ind+1], distance)
+                continue
+            """
             distances.append(
                 lp_array[ind + 1] - rp_array[ind] + 1
             )
@@ -99,13 +106,13 @@ def neg_control(sqlcon):
             right_right = result[0]
 
         # gene before left gene
-        cur.execute("SELECT r_position,strand FROM exons JOIN genes USING (gene_id) WHERE r_position < {} ORDER BY r_position DESC LIMIT 1;".format(left_left))
+        cur.execute("SELECT r_position,strand FROM exons JOIN genes USING (gene_id) WHERE r_position < {} and genome_id=1 ORDER BY r_position DESC LIMIT 1;".format(left_left))
         result = cur.fetchone()
         if result:
             before_left,b_strand = result
 
         # gene after right gene
-        cur.execute("SELECT l_position,strand FROM exons JOIN genes USING (gene_id) WHERE l_position > {} ORDER BY l_position ASC LIMIT 1;".format(right_right))
+        cur.execute("SELECT l_position,strand FROM exons JOIN genes USING (gene_id) WHERE l_position > {} and genome_id=1 ORDER BY l_position ASC LIMIT 1;".format(right_right))
         result = cur.fetchone()
         if result:
             after_right,a_strand = result

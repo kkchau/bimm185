@@ -1,6 +1,7 @@
 import subprocess
 import getpass
 import pymysql
+import sys
 
 
 sqlcon = pymysql.connect(host='bm185s-mysql.ucsd.edu',
@@ -90,23 +91,21 @@ for operon in op_set:
 
         # if there is insufficient information for this gene
         # skip the entire operon
-        # if not left or not right or not strand:
-        #     operon_complete = False
-
-        # else:
-        #     gene_info_set.append((gene_id, left, right, strand))
         if not left or not right or not strand:
+            print("ffffffffffff")
+            operon_complete = False
             continue
         else: 
             gene_info_set.append((gene_id, left, right, strand))
 
-    for gene in gene_info_set:
-        print(operon[0], gene)
-        cur.execute(
-            "INSERT INTO operons VALUES (%s,%s,%s,%s,%s,%s);",
-            (gene[0],operon[0],operon[-1],gene[1],gene[2],gene[3])
-        )
-        sqlcon.commit()
+    if operon_complete:
+        for gene in gene_info_set:
+            print(operon[0], gene)
+            cur.execute(
+                "INSERT INTO operons VALUES (%s,%s,%s,%s,%s,%s);",
+                (gene[0],operon[0],operon[-1],gene[1],gene[2],gene[3])
+            )
+            sqlcon.commit()
 
 sqlcon.close()
 

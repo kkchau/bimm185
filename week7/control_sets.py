@@ -30,7 +30,7 @@ def pos_control(sqlcon):
 
         # all coordinates into arrays
         cur.execute(
-            "SELECT l_pos, r_pos FROM operons WHERE operon='{}'".format(op)
+            "SELECT l_pos, r_pos,gene_id FROM operons WHERE operon='{}'".format(op)
             + " ORDER BY l_pos;"
         )
         coordinates = cur.fetchall()
@@ -41,6 +41,7 @@ def pos_control(sqlcon):
 
         lp_array = [coord[0] for coord in coordinates]      # left_pos
         rp_array = [coord[1] for coord in coordinates]      # right_pos
+        gene_id = [coord[2] for coord in coordinates]       # gene_ids (debug)
 
         # distances
         for ind in range(len(rp_array) - 1):
