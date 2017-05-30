@@ -24,6 +24,8 @@ def bench(connection, threshold):
     """
 
     cur = connection.cursor()
+    cur.execute("TRUNCATE tus;")
+    connection.commit()
 
     # get all genes in increasing order of position, along with strand
     cur.execute(
@@ -71,12 +73,12 @@ def bench(connection, threshold):
         # TP: True Positive; TN: True Negative;
         # FP: False Positive; FN: False Negative;
         # PD: Prediction
-        if this_operon == next_operon and this_operon != '' and next_operon != '':
-            if prob > threshold:
+        if this_operon == next_operon and (this_operon != '' or next_operon != ''):
+            if prob >= threshold:
                 status = '\"TP\"'
             else:
                 status = '\"FN\"'
-        elif this_operon != next_operon and this_operon != '' and next_operon != '':
+        elif this_operon != next_operon and (this_operon != '' or next_operon != ''):
             if prob < threshold:
                 status = '\"TN\"'
             else:
@@ -175,7 +177,9 @@ def acc(bench_vals):
         Return an array of accuracy values for each set of benchmark values
     """
     return [
-        (val['tp'] + val['tn']) / sum(val.values()) for val in bench_vals
+        (val['tp'] + val['tn']) / (
+            val['tp'] + val['tn'] + val['fp'] + val['fn']
+        ) for val in bench_vals
     ]
 
 
